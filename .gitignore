@@ -9,3 +9,7 @@ silverstripe-cache
 .DS_Store
 vendor/
 composer.lock
+/testsession/
+/buildtools/
+/docsviewer/
+/nbproject/
