@@ -1,0 +1,44 @@
+PageTypes:
+  HomePage:
+    Fields:
+      HeroImage: {CMSField: Image,  Tab: HeroImage}
+      HeroCaption: {CMSField: Text, Tab: HeroImage}
+
+  CaseStudyHolderContainerPage:
+    AllowedChildren: [CaseStudyHolderPage]
+  CaseStudyHolderPage:
+    AllowedChildren: [CaseStudyPage]
+    Fields:
+      Image: {CMSField: Image}
+  CaseStudyPage:
+    Fields:
+      Photo: {CMSFields: Image, Tab: Images}
+      Logo : {CMSFields: Image, Tab: Images}
+      Summary :{CMSFields: HTMLText}
+  AboutPage:
+    Components:
+      StaffMember:
+        Type: many
+        Interface:
+          Type: grid
+        Fields:
+          Name: {CMSField: Text}
+          JobTitle: {CMSField: Text}
+          Photo: {CMSField: Image}
+          Info :{CMSFields: HTMLText}
+  ContactPage: {}
+  SiteConfig:
+    Fields:
+      Address: {CMSFields: Text}
+      Phone: {CMSFields: Text}
+      email : {CMSFields: Text}
+      copyright: {CMSFields: Text}
+    Components:
+      Social:
+        Type: many
+        Interface:
+          Type: grid
+        Fields:
+          Icon : {CMSField: Image}
+          Link : {CMSFields: Text}
+          Name : {CMSFields: Text}

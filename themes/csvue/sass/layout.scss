@@ -1,0 +1,36 @@
+
+$lightBlue : #0096d9;
+$lightGray : #a7a9ac;
+
+body{}
+
+.top-bar2{ height: 50px; background-color: #D1D3D4; margin-bottom: 17px;
+  ul { float:right;
+    li { display: inline-block; list-style: none;}
+  }
+
+}
+.logoContainer {border-bottom: 1px solid $lightGray; padding-bottom: 12px;}
+
+.logo{ max-width: 100%;}
+header h2 {margin :22px 0 18px; }
+nav a{ font-size: 12px; font-weight: normal; }
+
+.home-banner{ height: 373px; background-color: grey; margin-bottom: 25px;}
+.lightBlue {background-color: $lightBlue}
+.caseStudiesTitle { min-height: 82px;
+  h3 { color: #ffffff; font-weight: normal; padding: 21px 0 0 25px; font-size: 28px;}
+}
+.big-blue-heading{ background-color: #0397D5; color: #FFF; padding: 21px; }
+.big-green-heading{ background-color: #BBD645; color: #434545; padding: 27px; font-size: 32px;}
+
+.home-case-study{ width: 23%; margin: 20px 2.66% 35px 0; height: 104px; float: left; background-color: orange;}
+.no-right-margin{ margin-right: 0 !important; }
+.home-case-study:hover{ background-color: grey; }
+
+.grey-home-blockquote{ background-color: #434545; color: #FFF; font-size: 26px; padding: 21px; }
+
+.about-boxes{ width: 32%; float: left; background-color: #BBD645; height: 155px; margin: 0 2% 0 0; }
+
+
+.footer-container{ background-color: #D1D3D3; }
