@@ -11,7 +11,7 @@ class Page extends SiteTree {
 		return Social::get();
 	}
 	public function CaseStudyCategories() {
-		return CaseStudyCategories::get();
+		return CaseStudyCategoriesPage::get();
 	}
 	public function SellingPage() {
 		return SellingPage::get();
@@ -42,8 +42,8 @@ class Page_Controller extends ContentController {
 		parent::init();
 
 		$themedir = ViewableData::ThemeDir();
-		Requirements::javascript($themedir."/js/foundation.min.js");
-		Requirements::javascript($themedir."/js/vendor/custom.modernizr.js");
+		//Requirements::javascript($themedir."/js/foundation.min.js");
+		//Requirements::javascript($themedir."/js/vendor/custom.modernizr.js");
 	}
 
 }

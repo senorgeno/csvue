@@ -14,10 +14,6 @@ class CaseStudyPage extends Page {
 		'Logo' => 'Image',
 	);
 
-	static $many_many = array (
-		'CaseStudyCategory' => 'CaseStudyCategories'
-	);
-
 
 
 	public function getCMSFields() {
@@ -27,8 +23,6 @@ class CaseStudyPage extends Page {
 		$fields->addFieldToTab("Root.Images", UploadField::create('Logo', _t('CaseStudyPage.LOGO', 'Logo')));
 		$fields->addFieldToTab("Root.Main", HtmlEditorField::create('Summary', _t('CaseStudyPage.SUMMARY', 'Summary')), 'Content');
 
-		$gf = new GridField('CaseStudyCategory','CaseStudyCategory', $this->CaseStudyCategory(), GridFieldConfig_RelationEditor::create());
-		$fields->addFieldToTab('Root.Categores',$gf);
 		return $fields;
 	}
 
