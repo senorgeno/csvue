@@ -31,9 +31,9 @@ $default-float: left;
 // $body-bg: #fff;
 // $body-font-color: #222;
 
-$body-font-family: "Lucida Sans Unicode", "Lucida Grande","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
-// $body-font-style: normal;
+$body-font-family: "lucida_sans_regular", "Lucida Grande","Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
 
 // Font-smoothing
 
@@ -45,7 +45,7 @@ $body-font-family: "Lucida Sans Unicode", "Lucida Grande","Helvetica Neue", "Hel
 
 // Colors
 
-// $primary-color: #2ba6cb;
+$primary-color: #0fa2e3;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -115,8 +115,8 @@ $body-font-family: "Lucida Sans Unicode", "Lucida Grande","Helvetica Neue", "Hel
 // Grid Variables
 //
 
- $row-width: emCalc(942px);
- $column-gutter: 0 emCalc(10px);
+ $row-width: emCalc(962px);
+ $column-gutter: 0 ;
  $total-columns: 12;
 
 //
@@ -126,7 +126,7 @@ $body-font-family: "Lucida Sans Unicode", "Lucida Grande","Helvetica Neue", "Hel
 // Maximum number of block grid elements per row
 
 // $block-grid-elements: 12;
-// $block-grid-default-spacing: emCalc(20px);
+ $block-grid-default-spacing: emCalc(20px);
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 
@@ -138,7 +138,7 @@ $body-font-family: "Lucida Sans Unicode", "Lucida Grande","Helvetica Neue", "Hel
 
 // Heading font styles
 
- $header-font-family: "Lucida Sans Unicode", "Lucida Grande","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $header-font-family: "Lucida Grande","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
  $header-font-color: $lightBlue;
@@ -324,7 +324,7 @@ $h3-font-size: emCalc(18px);
 
 // $button-tny: emCalc(7px);
 // $button-sml: emCalc(9px);
-// $button-med: emCalc(12px);
+//$button-med: emCalc(10px) emCalc(38px);
 // $button-lrg: emCalc(16px);
 
 // Display property.
@@ -356,7 +356,7 @@ $h3-font-size: emCalc(18px);
 
 // Radius used throughout the core.
 
-// $button-radius: $global-radius;
+$button-radius: 2px;
 
 // Opacity for disabled buttons.
 
@@ -1205,12 +1205,12 @@ $h3-font-size: emCalc(18px);
 
 // Background color for the top bar
 
-// $topbar-bg: #111 !default;
+ $topbar-bg: #ffffff !default;
 
 // Height and margin
 
-// $topbar-height: 45px;
-// $topbar-margin-bottom: emCalc(30px);
+ $topbar-height: 34px;
+ $topbar-margin-bottom: 0;
 
 // Control Input height for top bar
 
@@ -1218,28 +1218,28 @@ $h3-font-size: emCalc(18px);
 
 // Controlling the styles for the title in the top bar
 
-// $topbar-title-weight: bold;
-// $topbar-title-font-size: emCalc(17px);
+ $topbar-title-weight: bold;
+ $topbar-title-font-size: emCalc(12px);
 
 // Style the top bar dropdown elements
 
 // $topbar-dropdown-bg: #222;
-// $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: lighten($topbar-bg, 5%);
+$topbar-dropdown-link-color: #c8c6c6;
+$topbar-dropdown-link-bg: #5c5652;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.5;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
+ $topbar-link-color: $darkGray;
 // $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
-// $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13px);
+$topbar-link-color-active: $darkGray;
+$topbar-link-weight: bold;
+$topbar-link-font-size: emCalc(12px);
 // $topbar-link-hover-lightness: -30%; // Darken by 30%
-// $topbar-link-bg-hover: darken($topbar-bg, 3%);
-// $topbar-link-bg-active: darken($topbar-bg, 3%);
+ $topbar-link-bg-hover: $lightBlue;
+ $topbar-link-bg-active: #ffffff;
 
 // $topbar-dropdown-label-color: #555;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1248,11 +1248,11 @@ $h3-font-size: emCalc(18px);
 
 // Top menu icon styles
 
-// $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: emCalc(13px);
+$topbar-menu-link-transform: uppercase;
+ $topbar-menu-link-font-size: emCalc(13px);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
+$topbar-menu-link-color: $lightGray;
+$topbar-menu-icon-color: $lightGray;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 

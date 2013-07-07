@@ -7,6 +7,16 @@ class Page extends SiteTree {
 	public static $has_one = array(
 	);
 
+	public function Socials() {
+		return Social::get();
+	}
+	public function CaseStudyCategories() {
+		return CaseStudyCategories::get();
+	}
+	public function SellingPage() {
+		return SellingPage::get();
+	}
+
 }
 class Page_Controller extends ContentController {
 

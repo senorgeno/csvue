@@ -1,36 +1,92 @@
 
 $lightBlue : #0096d9;
-$lightGray : #a7a9ac;
+$lightGray : #a7a9ab;
+$darkGray : #535353;
+$lightGreen : #bbd645;
+
+p {color: $darkGray;font-size: 14px;}
+h5 {font-size: 14px; line-height: 1.3em;}
 
 body{}
+.row {padding-top:0; padding-bottom:0;margin-top: 0;margin-bottom: 0;}
+.module { margin: 0 10px;}
+.myrid {font-family: "MyriadPro-Regular", times ,sans-serif; font-weight: normal;}
+.rounded {-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;}
+.button {padding: 12px 38px;}
 
-.top-bar2{ height: 50px; background-color: #D1D3D4; margin-bottom: 17px;
-  ul { float:right;
+.top-bar2{ height: 50px; background-color: #D1D3D4; 
+	.topbarrow {height: 50px; }
+  ul { float:right; margin-bottom: 0;
     li { display: inline-block; list-style: none;}
   }
 
 }
-.logoContainer {border-bottom: 1px solid $lightGray; padding-bottom: 12px;}
-
+// header styles
+header .module{height: 92px;border-bottom: 1px solid $lightGray; padding-bottom: 12px;position: relative;}
+.logoContainer {margin-top: 20px;}
 .logo{ max-width: 100%;}
-header h2 {margin :22px 0 18px; }
-nav a{ font-size: 12px; font-weight: normal; }
 
-.home-banner{ height: 373px; background-color: grey; margin-bottom: 25px;}
-.lightBlue {background-color: $lightBlue}
-.caseStudiesTitle { min-height: 82px;
-  h3 { color: #ffffff; font-weight: normal; padding: 21px 0 0 25px; font-size: 28px;}
+.menuContainer {margin-top: 57px;}
+
+.top-bar-section {position: absolute;bottom: 0; right: 0;}
+//emCalc
+.top-bar-section li a{font-family:"Lucida Grande","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; border-left: 1px solid $lightGray;}
+.tagline { 
+	h2 {font-size:emCalc(20px);font-weight: bold;padding-top:7px; padding-bottom:3px; }
 }
-.big-blue-heading{ background-color: #0397D5; color: #FFF; padding: 21px; }
-.big-green-heading{ background-color: #BBD645; color: #434545; padding: 27px; font-size: 32px;}
 
-.home-case-study{ width: 23%; margin: 20px 2.66% 35px 0; height: 104px; float: left; background-color: orange;}
-.no-right-margin{ margin-right: 0 !important; }
-.home-case-study:hover{ background-color: grey; }
+// Home Page Styles 
+.heroImage p {margin-bottom: 0;}
 
-.grey-home-blockquote{ background-color: #434545; color: #FFF; font-size: 26px; padding: 21px; }
+.lightBlue {background-color: $lightBlue;}
+.lightGreen{background-color: $lightGreen}
+.caseStudiesTitle { min-height: 82px; margin-top:28px;
+  h3 { color: #ffffff; font-weight: lighter; padding: 24px 0 0 26px; font-size: 32px;}
+}
+.casestudiesHomePageintro p {color: #ffffff; font-size: 13px;min-height: 124px; padding: 10px 30px 0 10px; }
+.csContainer { height: 124px; padding: 0 10px; margin-bottom: 15px;}
+.csContainer img {width: 229px; height: 105px;}
+.csContainer .cs h6 {color: $darkGray;font-size: 13px;font-weight: bold;}
 
-.about-boxes{ width: 32%; float: left; background-color: #BBD645; height: 155px; margin: 0 2% 0 0; }
+.getintouchbox{ background-color: #434545;  padding: 21px; margin-top: 28px;
+	h3 {display:inline-block; max-width: 578px;flaot:left;color: #FFF; font-size: 22px;font-style: italic;font-weight: normal;}
+	a {display:inline-block;float:right;}
+}
+.aboutTitle {margin-top: 34px;
+	h3 { color: $darkGray;}
+}
+.HomepageLink {color: $darkGray;font-size: 12px;font-weight: normal; text-transform: uppercase; text-decoration: underline;}
+.SellingPageContainer {width: 300px;margin:0 10px;
+	img {width: 300; height: 157;}
+	h5 {color: $darkGray;font-size: 12px;font-weight: bold;}
+	p {color: $darkGray;font-size: 12px;font-weight: normal;}
+}
+.ReferBox {
+	margin-top: 52px;
+	margin-bottom: 45px;
+	padding-bottom: 5px;
+	a{ margin-top: 15px;}
+}
+
+// footer sytles
+.footer-container{ background-color: #D1D3D3; 
+	.large-4 {
+		width: 240px;
+		margin-right: 70px;
+		margin-top: 60px;
+		h5 {font: 12px; color:$darkGray; text-transform: uppercase; border-top: 1px solid $darkGray;border-bottom: 1px solid $darkGray; padding: 18px 0 14px 0;margin-bottom: 22px;}
+		p { margin: 0; padding: 0;}
+		.email a {text-decoration: underline;color: $darkGray;}
+		.footerMenu {font: 12px; color:$darkGray; text-transform: uppercase; border-top: 1px solid $darkGray;padding: 16px 0 13px 0; margin-bottom: 0; border-bottom: none;}
+	}
+}
+.footercopy {border-top:1px solid $darkGray; margin-top: 42px; padding-top: 38px;
+	.copyright {font-size: 10px;float: left;}
+}
 
 
-.footer-container{ background-color: #D1D3D3; }
+
+
+

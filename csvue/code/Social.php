@@ -26,7 +26,9 @@ class Social extends DataObject {
 
 		return $fields;
 	}
-
+	public function IconUrl() {
+		return $this->obj('Icon')->filename;
+	}
 
 	/** --//-- **/
 

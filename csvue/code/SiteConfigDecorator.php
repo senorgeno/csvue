@@ -2,32 +2,25 @@
 
 class SiteConfigDecorator extends DataExtension
 {
-	/** //--// **/
-
 
 	static $db = array (
-		'Address' => 'Varchar(255)',
-		'Phone' => 'Varchar(255)',
+		'Address' => 'HTMLText',
+		'Phone' => 'HTMLText',
 		'email' => 'Varchar(255)',
 		'copyright' => 'Varchar(255)',
 	);
 
 
 	static $has_many = array (
-		'Socials' => 'Social',
+		'Socials' => 'Social'
 	);
 
-	
-
-
-
-
 	public function updateGeneratedCMSFields(FieldList $fields) {
-		$fields->addFieldToTab("Root.Main", TextField::create('Address', _t('SiteConfig.ADDRESS', 'Address')));
-		$fields->addFieldToTab("Root.Main", TextField::create('Phone', _t('SiteConfig.PHONE', 'Phone')));
+		$fields->addFieldToTab("Root.Main", HtmlEditorField::create('Address', _t('SiteConfig.ADDRESS', 'Address')));
+		$fields->addFieldToTab("Root.Main", HtmlEditorField::create('Phone', _t('SiteConfig.PHONE', 'Phone')));
 		$fields->addFieldToTab("Root.Main", TextField::create('email', _t('SiteConfig.EMAIL', 'email')));
 		$fields->addFieldToTab("Root.Main", TextField::create('copyright', _t('SiteConfig.COPYRIGHT', 'copyright')));
-		$fields->addFieldToTab("Root.Socials", GridField::create('Socials','', $this->owner->Socials(), GridFieldConfig_RecordEditor::create()));
+		$fields->addFieldToTab("Root.Socials", GridField::create('Social','', $this->owner->Socials(), GridFieldConfig_RecordEditor::create()));
 
 		return $fields;
 	}

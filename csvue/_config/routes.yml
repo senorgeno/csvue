@@ -1,0 +1,7 @@
+---
+Name: csvueroutes
+After: framework/routes
+---
+Director:
+  rules:
+    'category/$Action/$Name': 'casestudyCategory_Controller'

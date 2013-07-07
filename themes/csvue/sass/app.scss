@@ -1,7 +1,10 @@
 
 $lightBlue : #0096d9;
 $lightGray : #a7a9ac;
+$darkGray : #535353;
+
 // Global Foundation Settings
+@import "fonts.scss";
 @import "settings";
 
 // Comment out this import if you don't want to use normalize
@@ -9,7 +12,7 @@ $lightGray : #a7a9ac;
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
-@import "layout.css";
+@import "layout.scss";
 
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing

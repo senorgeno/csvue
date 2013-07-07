@@ -4,7 +4,7 @@ global $project;
 $project = 'csvue';
 
 //global $database;
-//$database = 'csvue';
+//$database = '(csvue)';
 //require_once('conf/ConfigureFromEnv.php');
 
 global $databaseConfig;
@@ -18,6 +18,7 @@ $databaseConfig = array(
 );
 Security::setDefaultAdmin("admin", "admin");
 Director::set_environment_type("dev");
+
 MySQLDatabase::set_connection_charset('utf8');
 
 // Set the current theme. More themes can be downloaded from
@@ -29,4 +30,4 @@ SiteConfig::add_extension('SiteConfig','SiteConfigDecorator');
 i18n::set_locale('en_GB');
 
 // Enable nested URLs for this site (e.g. page/sub-page/)
-if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
+//if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
