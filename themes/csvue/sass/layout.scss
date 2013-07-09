@@ -3,14 +3,19 @@ $lightBlue : #0096d9;
 $lightGray : #a7a9ab;
 $darkGray : #535353;
 $lightGreen : #bbd645;
+$LinkGreen : #c0d959;
 
-p {color: $darkGray;font-size: 14px;}
+p {color: $darkGray;font-size: 14px;line-height:1.5em;}
+a { color: $LinkGreen;}
+h1 { color:#282828;font-size:32px; font-family: "MyriadPro-Regular", times ,sans-serif; font-weight:bold;}
+h3 { text-decoration:uppercase;font-size:16px; font-weight:bold;color:$darkGray;} 
+h4 { font-size:14px;color:$darkGray;font-weight:normal;margin-bottom:1px; }
 h5 {font-size: 14px; line-height: 1.3em;}
 
 body{}
 .row {padding-top:0; padding-bottom:0;margin-top: 0;margin-bottom: 0;}
 .module { margin: 0 10px;}
-.myrid {font-family: "MyriadPro-Regular", times ,sans-serif; font-weight: normal;}
+.myrid {font-family: "MyriadPro-Regular", times ,sans-serif; font-weight: 100;}
 .rounded {-webkit-border-radius: 4px;
 -moz-border-radius: 4px;
 border-radius: 4px;}
@@ -69,6 +74,83 @@ header .module{height: 92px;border-bottom: 1px solid $lightGray; padding-bottom:
 	padding-bottom: 5px;
 	a{ margin-top: 15px;}
 }
+// caseStudyCategory Page
+//380 × 224
+.ContentTop {border-top: 1px solid #a7a9ab;}
+.caseStudiesHolderTop {height:144px;
+	h1 {padding-top:30px;}
+}
+.caseStudiesHolder{
+	border-top: 1px solid #a7a9ab;border-bottom: 1px solid #a7a9ab;height:225px;
+	margin-bottom:16px;
+	position: relative;
+	div {float:left;}
+	.button { position:absolute; bottom:-2px;right:0;}
+}
+.caseStudiesHolderPhoto {
+	
+	max-width:380px;
+	img { width:380px;height:224px;}
+}
+.caseStudiesHolderLogo {
+	margin-left:15px;
+	margin-right:15px;
+	max-width:260px;
+	img {width:260px;height:223px;}
+}
+.caseStudiesSummary {
+	padding-left:5px;
+	max-width:272px;
+	height: 224px;
+	overflow:hidden;
+	
+	
+	h3 { padding-bottom:8px; margin-top:24px; font-size:12px;
+		}
+	h4 {font-weight:normal;line-height:1.5em;font-size:12px;}
+	p {font-size:12px;line-height:1.2em;padding-right:16px;
+		font-family: "MyriadPro-Regular", times ,sans-serif; }
+	
+}
+.caseStudiesHolderBottom {height: 54px;}
+
+// casestudies page 
+
+.mainContent {
+	margin:18px 0 24px;;
+	border-bottom: 1px solid #d1d3d4;
+	padding-bottom:24px;
+	h1 { border-bottom: 1px solid #d1d3d4;font-family:"Lucida Grande","Helvetica", Helvetica, Arial, sans-serif;padding-bottom:24px;margin-bottom:24px;font-size:25px;color:#535353;}
+	h2 {font-family:"lucida_sans_bold";font-size: 14px;margin: 24px 0 ;color:$darkGray;}
+	h3 {text-transform:uppercase;
+		font-size: 18px;
+		}
+	h4 {font-family: "MyriadPro-Regular", times ,sans-serif;font-weight:bold;
+		font-size: 16px;}
+	p {padding-right:26px;}
+}
+.mainContentSideBar{
+	
+	img {max-width:300px; max-height:450px;float:right;padding: 34px 0 32px 20px; }  
+}
+// about Page
+.staff {
+	margin-bottom: 40px;
+	h2 {font-family:"lucida_sans_bold";font-size: 16px;margin: 24px 0 ;color:$darkGray;}
+}
+
+.staffMember {
+	padding-right:92px;
+	height : 140px;
+	overflow:hidden;
+	img {float:left; width: 116px;height:124px;margin-right:42px;margin-bottom:18px;}
+	h3 {font-size:14px; font-weight:normal; margin-top:21px;margin-bottom:-5px;}
+	h4 {font-size:14px; font-weight:normal; font-style:italic;margin-bottom:10px;}
+	p { font-size:13px;}
+}
+ 
+
+
 
 // footer sytles
 .footer-container{ background-color: #D1D3D3; 

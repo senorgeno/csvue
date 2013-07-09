@@ -14,7 +14,14 @@ class CaseStudyPage extends Page {
 		'Logo' => 'Image',
 	);
 
-
+	
+	public function ExcerptPhotoUrl() {
+		return $this->obj('ExcerptPhoto')->filename;
+	}
+	
+	public function LogoUrl() {
+		return $this->obj('Logo')->filename;
+	}
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();

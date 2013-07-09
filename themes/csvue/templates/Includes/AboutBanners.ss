@@ -1,0 +1,13 @@
+<div class="row" >
+	<% loop SellingPage %>
+	<a href="$Link">
+	<div class="large-4 columns SellingPageContainer">
+		<p><img src="$BannerUrl" alt="$Title" title="$Title"></p>
+		<h5> $Title </h5>
+		$Summary
+		<a class="HomepageLink" href="$Link">More </a>
+	</div>
+	</a>
+
+	<% end_loop %>
+</div>

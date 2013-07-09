@@ -25,6 +25,7 @@ MySQLDatabase::set_connection_charset('utf8');
 // http://www.silverstripe.org/themes/
 SSViewer::set_theme('csvue');
 SiteConfig::add_extension('SiteConfig','SiteConfigDecorator');
+BlogEntry::add_extension('BlogEntry', 'BlogEntryExtension');
 
 // Set the site locale
 i18n::set_locale('en_GB');
