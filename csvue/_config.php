@@ -3,19 +3,19 @@
 global $project;
 $project = 'csvue';
 
-//global $database;
-//$database = '(csvue)';
-//require_once('conf/ConfigureFromEnv.php');
+global $database;
+$database = 'csvue';
+require_once('conf/ConfigureFromEnv.php');
 
-global $databaseConfig;
-$databaseConfig = array(
-	"type" => "MySQLDatabase",
-	"server" => "localhost",
-	"username" => "root",
-	"password" => "root",
-	"database" => "csvue",
-	//"database" => "iconicDev"
-);
+//global $databaseConfig;
+//$databaseConfig = array(
+//	"type" => "MySQLDatabase",
+//	"server" => "localhost",
+//	"username" => "root",
+//	"password" => "root",
+//	"database" => "csvue",
+//	//"database" => "iconicDev"
+//);
 Security::setDefaultAdmin("admin", "admin");
 Director::set_environment_type("dev");
 
