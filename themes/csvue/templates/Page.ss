@@ -34,7 +34,7 @@
 	        <div class="large-12 header-container">
 
 	            <div class="large-5 columns logoContainer">
-			    	<img class="logo" src="$ThemeDir/images/cs-vue.gif" alt="$Title" title="$Title" />
+			    <a href="home"><img class="logo" src="$ThemeDir/images/cs-vue.gif" alt="$Title" title="$Title" /></a>
 			    </div>
 
 			    <div class="large-7 columns menuContainer">
@@ -91,7 +91,8 @@
         			<%-- TODO LOOP RECENT BLOG POSTS --%>
         		</div>
         		<div class="large-4 columns">
-        			<% loop $Menu(1) %>
+        			<a href="home"><h5 class="footerMenu">Home</h5></a>
+				<% loop $Menu(1) %>
         			<a href="$Link"><h5 class="footerMenu">$Title</h5></a>
         			<% end_loop %>
         		</div>
