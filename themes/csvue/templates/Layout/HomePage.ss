@@ -22,7 +22,10 @@
 	<a href="$Link">
 	<div class="large-3 small-6 columns csContainer" >
 		<div class="cs" >
-			<img src="$ImageUrl">
+			<div>
+				<img src="$ImageUrl">
+				<div class="hoverContainer" ></div>
+			</div>
 			<h6 > $Title </h6>
 		</div>
 	</div>

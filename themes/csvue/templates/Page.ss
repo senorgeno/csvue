@@ -31,34 +31,32 @@
 	<div>
 	<header class="row" >
 		<div class="module" >
-	        <div class="large-12 header-container">
-
-	            <div class="large-5 columns logoContainer">
+	        <div class="large-12 header-container clearfix">
 			    <a href="home"><img class="logo" src="$ThemeDir/images/cs-vue.gif" alt="$Title" title="$Title" /></a>
-			    </div>
-
-			    <div class="large-7 columns menuContainer">
-				    <nav class="top-bar">
-				    	<section class="top-bar-section">
-						    <ul class="right" >
-							<% loop $Menu(1) %>
-							<li class="<% if LinkingMode == current %>active<% end_if %><% if LinkingMode == section %>active<% end_if %><% if Children %> has-dropdown<% end_if %>">
-							<a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
-								<% if Children %>
-								<ul class="dropdown">
-									<% loop Children %>
-									<li class="<% if LinkingMode == current %>active<% end_if %><% if Children %> has-dropdown<% end_if %>">
-										<a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
-									</li>
-									<% end_loop %>
-								</ul>
-								<% end_if %>
-							</li>
-							<% end_loop %>
+			 
+			    <nav >
+			    	<section class="topMenu">
+					    <ul>
+						<% loop $Menu(1) %>
+						<li class="<% if LinkingMode == current %>active<% end_if %> topMenuLi">
+							<div class="MenuHover" ></div>
+							<a href="$Link" class="topA">$MenuTitle.XML</a>
+							<% if Children %>
+							<ul >
+								<% loop Children %>
+								<li class="<% if LinkingMode == current %>active<% end_if %>">
+									<a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
+								</li>
+								<% end_loop %>
 							</ul>
-						</section>
-					</nav>
-			    <div>
+							<span class="topMenuArrow"></span>
+							<% end_if %>
+						</li>
+						<% end_loop %>
+						</ul>
+					</section>
+				</nav>
+			    
 			</div>
         </div>
 	</header>
