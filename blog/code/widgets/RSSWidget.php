@@ -1,26 +1,26 @@
 <?php
 if(class_exists('Widget')) {
 	class RSSWidget extends Widget {
-	private static $db = array(
+	 static $db = array(
 			"RSSTitle" => "Text",
 			"RssUrl" => "Text",
 			"NumberToShow" => "Int"
 		);
 		
-	private static $has_one = array();
+	 static $has_one = array();
 		
-	private static $has_many = array();
+	 static $has_many = array();
 		
-	private static $many_many = array();
+	 static $many_many = array();
 		
-	private static $belongs_many_many = array();
+	 static $belongs_many_many = array();
 		
-	private static $defaults = array(
+	 static $defaults = array(
 			"NumberToShow" => 10,
 			"RSSTitle" => 'RSS Feed'
 		);
-	private static $cmsTitle = "RSS Feed";
-	private static $description = "Downloads another page's RSS feed and displays items in a list.";
+	 static $cmsTitle = "RSS Feed";
+	 static $description = "Downloads another page's RSS feed and displays items in a list.";
 		
 		/**
 		 * If the RssUrl is relative, convert it to absolute with the

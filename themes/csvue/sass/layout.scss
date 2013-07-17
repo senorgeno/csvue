@@ -4,8 +4,9 @@ $lightGray : #a7a9ab;
 $darkGray : #535353;
 $lightGreen : #bbd645;
 $LinkGreen : #c0d959;
+$sans: 'MS Sans Serif', Geneva, sans-serif;
 
-p {color: $darkGray;font-size: 14px;line-height:1.5em;font-family: 'MS Sans Serif', Geneva, sans-serif;}
+p {color: $darkGray;font-size: 14px;line-height:1.5em;font-family: $sans;}
 a { color: $LinkGreen;}
 h1 { color:#282828;font-size:32px; font-family: "MyriadPro-Regular", times ,sans-serif; font-weight:bold;}
 h3 { text-decoration:uppercase;font-size:16px; font-weight:bold;color:$darkGray;} 
@@ -43,10 +44,9 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .topMenu ul{margin:0;padding:0;
 	li {
 		list-style: none; margin:0;padding:0; float: left;
-		a{ margin: 0 ;padding:8px 12px 10px 12px; display: inline-block;
+		a{ margin: 0 ;padding:8px 8px 10px 10px; display: inline-block;
 			font-size:12px; font-weight: bold; font-family: Lucida Sans, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 			color: #535354;
-			min-width: 76px;
 			border-left: 1px solid $lightGray; position:relative;
 			
 		}
@@ -176,10 +176,7 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 		font-size: 16px;}
 	p {padding-right:26px;}
 }
-.mainContentSideBar{
-	
-	img {max-width:300px; max-height:450px;float:right;padding: 34px 0 32px 20px; }  
-}
+
 // about Page
 .staff {
 	margin-bottom: 40px;
@@ -195,9 +192,97 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 	h4 {font-size:14px; font-weight:normal; font-style:italic;margin-bottom:10px;}
 	p { font-size:13px;}
 }
- 
+
+// blog Tree Page 
+.heroPostContainer {padding-bottom: 32px;
+	border-bottom: 1px solid #535353;}
+.heroPost{
+	background-color: $lightBlue;
+
+	.heropostImageHolder{
+		float:left;
+		position:relative;
+		width:520px;
+		img {max-height:300px;max-width:520px;padding:0;margin:0;}
+		h1 {position: absolute; bottom: 0; left:0; right:0;
+			background-color: rgba(0, 0, 0, 0.8);
+			color: #ffffff;
+			font-size: 22px;
+			font-family: $sans;
+			font-weight: normal;
+			padding:16px;
+			margin: 0;
+
+		}
+	}
+	.heropostSummary{
+		float: left;
+		width:420px;
+		padding: 28px;
+		h1 {font-size: 18px;color:#ffffff;font-family: $sans;font-weight: normal;}
+		p {font-size: 14px;color:#ffffff;font-family: $sans;font-weight: normal;}
+		a {font-size: 14px;color:#ffffff;font-family: $sans;font-weight: normal;}
+		a:hover{text-decoration: underline;}
+	}
+}
+.FeaturedPost{
+	padding: 26px 10px 0 10px;
+	h3{}
+	img {width: 300px;height: 106px;}
+	p {padding: 24px 0; line-height: 1.3em;font-size: 14px;margin: 0;}
+	a {color:$darkGray;padding-top: 0 ; padding-bottom: 24px;font-family: $sans;font-size: 14px;
+		display:block; margin: 0;
+	}
+	a:hover{text-decoration: underline;}
+	.date {padding-bottom: 0; padding-top: 0;font-family: $sans;}
+	.CommentCount {float: right; color: $lightBlue;font-family: $sans;padding: 0; margin: 0;}
+}
+.featuredPostsSpacer {padding-bottom: 26px; margin-bottom: 32px;
+	border-bottom: 1px solid #535353;}
 
 
+.BlogSummaryBlockHeading {background-color: $lightGreen;padding: 14px 0 12px 14px; margin: 0;
+	font-size: 14px; font-weight: bold;color:$darkGray;}
+
+.blogLatestPosts {padding-right: 32px;}
+.LatestPostModule, .sideBarPostSummary {
+	padding-top: 14px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #535353;
+	margin-bottom: 16px;
+	img {width:142; height:170px; float: left;margin: 0 16px 16px 0;padding:0;}
+	h3 {text-transform: uppercase; font-size: 18px; font-weight: normal;
+		font-family: $sans;margin: 0;
+	}
+	h4 {margin: 0 ;font-size: 18px; margin-bottom: 26px;padding:0;}
+	.bloginfo {color: #bbd646;font-size: 14px;margin: 0; margin-bottom: 18px;}
+	p {line-height: 1.3em;}
+	a {color:$darkGray;padding-top: 0 ; padding-bottom: 0;font-family: $sans;font-size: 14px;
+		margin: 0;
+	}
+	a:hover{text-decoration: underline;}
+}
+.sideBarPostSummary { 
+	margin-bottom: 38px;
+	border: none;
+	h3 {margin-bottom: 18px; text-transform: none; }
+	.CommentCount {color: #bbd646;font-size: 14px;margin: 0; float:right;}
+}
+
+// blog Entry 
+.blogentry {
+	.bloginfo {color: #bbd646;font-size: 14px;margin: 0; margin-bottom: 18px; margin-top:24px;}
+}
+.mainContentSideBar {
+	float:right;padding: 34px 0 32px 20px; 
+	img {width: 300px; height:450px; margin-bottom: 28px;}
+	.sideBarPostSummary {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: 1px solid #535353;
+		.CommentCount { padding-bottom: 16px;}
+	}
+}
 
 // footer sytles
 .footer-container{ background-color: #D1D3D3; 

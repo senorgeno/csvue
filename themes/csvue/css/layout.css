@@ -1,17 +1,17 @@
-/* line 8, ../sass/layout.scss */
+/* line 9, ../sass/layout.scss */
 p {
   color: #535353;
   font-size: 14px;
   line-height: 1.5em;
-  font-family: 'MS Sans Serif', Geneva, sans-serif;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
 }
 
-/* line 9, ../sass/layout.scss */
+/* line 10, ../sass/layout.scss */
 a {
   color: #c0d959;
 }
 
-/* line 10, ../sass/layout.scss */
+/* line 11, ../sass/layout.scss */
 h1 {
   color: #282828;
   font-size: 32px;
@@ -19,7 +19,7 @@ h1 {
   font-weight: bold;
 }
 
-/* line 11, ../sass/layout.scss */
+/* line 12, ../sass/layout.scss */
 h3 {
   text-decoration: uppercase;
   font-size: 16px;
@@ -27,7 +27,7 @@ h3 {
   color: #535353;
 }
 
-/* line 12, ../sass/layout.scss */
+/* line 13, ../sass/layout.scss */
 h4 {
   font-size: 14px;
   color: #535353;
@@ -35,13 +35,13 @@ h4 {
   margin-bottom: 1px;
 }
 
-/* line 13, ../sass/layout.scss */
+/* line 14, ../sass/layout.scss */
 h5 {
   font-size: 14px;
   line-height: 1.3em;
 }
 
-/* line 16, ../sass/layout.scss */
+/* line 17, ../sass/layout.scss */
 .row {
   padding-top: 0;
   padding-bottom: 0;
@@ -49,56 +49,56 @@ h5 {
   margin-bottom: 0;
 }
 
-/* line 17, ../sass/layout.scss */
+/* line 18, ../sass/layout.scss */
 .module {
   margin: 0 10px;
 }
 
-/* line 18, ../sass/layout.scss */
+/* line 19, ../sass/layout.scss */
 .myrid {
   font-family: "MyriadPro-Regular", times ,sans-serif;
   font-weight: 100;
 }
 
-/* line 19, ../sass/layout.scss */
+/* line 20, ../sass/layout.scss */
 .rounded {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
-/* line 22, ../sass/layout.scss */
+/* line 23, ../sass/layout.scss */
 .button {
   padding: 12px 38px;
 }
 
-/* line 24, ../sass/layout.scss */
+/* line 25, ../sass/layout.scss */
 .top-bar2 {
   height: 50px;
   background-color: #D1D3D4;
 }
-/* line 25, ../sass/layout.scss */
+/* line 26, ../sass/layout.scss */
 .top-bar2 .topbarrow {
   height: 50px;
 }
-/* line 26, ../sass/layout.scss */
+/* line 27, ../sass/layout.scss */
 .top-bar2 ul {
   float: right;
   margin-bottom: 0;
 }
-/* line 27, ../sass/layout.scss */
+/* line 28, ../sass/layout.scss */
 .top-bar2 ul li {
   display: inline-block;
   list-style: none;
 }
 
-/* line 32, ../sass/layout.scss */
+/* line 33, ../sass/layout.scss */
 header .module {
   border-bottom: 1px solid #a7a9ab;
   position: relative;
 }
 
-/* line 35, ../sass/layout.scss */
+/* line 36, ../sass/layout.scss */
 .logo {
   width: 427px;
   height: 63px;
@@ -107,47 +107,46 @@ header .module {
   float: left;
 }
 
-/* line 37, ../sass/layout.scss */
+/* line 38, ../sass/layout.scss */
 .menuContainer {
   margin-top: 57px;
 }
 
-/* line 39, ../sass/layout.scss */
+/* line 40, ../sass/layout.scss */
 .top-bar-section {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-/* line 42, ../sass/layout.scss */
+/* line 43, ../sass/layout.scss */
 .topMenu {
   float: right;
   margin: 60px 0 0 0;
   border: 0;
 }
 
-/* line 43, ../sass/layout.scss */
+/* line 44, ../sass/layout.scss */
 .topMenu ul {
   margin: 0;
   padding: 0;
 }
-/* line 44, ../sass/layout.scss */
+/* line 45, ../sass/layout.scss */
 .topMenu ul li {
   list-style: none;
   margin: 0;
   padding: 0;
   float: left;
 }
-/* line 46, ../sass/layout.scss */
+/* line 47, ../sass/layout.scss */
 .topMenu ul li a {
   margin: 0;
-  padding: 8px 12px 10px 12px;
+  padding: 8px 8px 10px 10px;
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
   font-family: Lucida Sans, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
   color: #535354;
-  min-width: 76px;
   border-left: 1px solid #a7a9ab;
   position: relative;
 }
@@ -501,18 +500,10 @@ header .module {
 }
 
 /* line 181, ../sass/layout.scss */
-.mainContentSideBar img {
-  max-width: 300px;
-  max-height: 450px;
-  float: right;
-  padding: 34px 0 32px 20px;
-}
-
-/* line 184, ../sass/layout.scss */
 .staff {
   margin-bottom: 40px;
 }
-/* line 186, ../sass/layout.scss */
+/* line 183, ../sass/layout.scss */
 .staff h2 {
   font-family: "lucida_sans_bold";
   font-size: 16px;
@@ -520,13 +511,13 @@ header .module {
   color: #535353;
 }
 
-/* line 189, ../sass/layout.scss */
+/* line 186, ../sass/layout.scss */
 .staffMember {
   padding-right: 92px;
   height: 140px;
   overflow: hidden;
 }
-/* line 193, ../sass/layout.scss */
+/* line 190, ../sass/layout.scss */
 .staffMember img {
   float: left;
   width: 116px;
@@ -534,36 +525,276 @@ header .module {
   margin-right: 42px;
   margin-bottom: 18px;
 }
-/* line 194, ../sass/layout.scss */
+/* line 191, ../sass/layout.scss */
 .staffMember h3 {
   font-size: 14px;
   font-weight: normal;
   margin-top: 21px;
   margin-bottom: -5px;
 }
-/* line 195, ../sass/layout.scss */
+/* line 192, ../sass/layout.scss */
 .staffMember h4 {
   font-size: 14px;
   font-weight: normal;
   font-style: italic;
   margin-bottom: 10px;
 }
-/* line 196, ../sass/layout.scss */
+/* line 193, ../sass/layout.scss */
 .staffMember p {
   font-size: 13px;
 }
 
-/* line 203, ../sass/layout.scss */
+/* line 197, ../sass/layout.scss */
+.heroPostContainer {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #535353;
+}
+
+/* line 199, ../sass/layout.scss */
+.heroPost {
+  background-color: #0096d9;
+}
+/* line 202, ../sass/layout.scss */
+.heroPost .heropostImageHolder {
+  float: left;
+  position: relative;
+  width: 520px;
+}
+/* line 206, ../sass/layout.scss */
+.heroPost .heropostImageHolder img {
+  max-height: 300px;
+  max-width: 520px;
+  padding: 0;
+  margin: 0;
+}
+/* line 207, ../sass/layout.scss */
+.heroPost .heropostImageHolder h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  font-weight: normal;
+  padding: 16px;
+  margin: 0;
+}
+/* line 218, ../sass/layout.scss */
+.heroPost .heropostSummary {
+  float: left;
+  width: 420px;
+  padding: 28px;
+}
+/* line 222, ../sass/layout.scss */
+.heroPost .heropostSummary h1 {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  font-weight: normal;
+}
+/* line 223, ../sass/layout.scss */
+.heroPost .heropostSummary p {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  font-weight: normal;
+}
+/* line 224, ../sass/layout.scss */
+.heroPost .heropostSummary a {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  font-weight: normal;
+}
+/* line 225, ../sass/layout.scss */
+.heroPost .heropostSummary a:hover {
+  text-decoration: underline;
+}
+
+/* line 228, ../sass/layout.scss */
+.FeaturedPost {
+  padding: 26px 10px 0 10px;
+}
+/* line 231, ../sass/layout.scss */
+.FeaturedPost img {
+  width: 300px;
+  height: 106px;
+}
+/* line 232, ../sass/layout.scss */
+.FeaturedPost p {
+  padding: 24px 0;
+  line-height: 1.3em;
+  font-size: 14px;
+  margin: 0;
+}
+/* line 233, ../sass/layout.scss */
+.FeaturedPost a {
+  color: #535353;
+  padding-top: 0;
+  padding-bottom: 24px;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  font-size: 14px;
+  display: block;
+  margin: 0;
+}
+/* line 236, ../sass/layout.scss */
+.FeaturedPost a:hover {
+  text-decoration: underline;
+}
+/* line 237, ../sass/layout.scss */
+.FeaturedPost .date {
+  padding-bottom: 0;
+  padding-top: 0;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+}
+/* line 238, ../sass/layout.scss */
+.FeaturedPost .CommentCount {
+  float: right;
+  color: #0096d9;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 240, ../sass/layout.scss */
+.featuredPostsSpacer {
+  padding-bottom: 26px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #535353;
+}
+
+/* line 244, ../sass/layout.scss */
+.BlogSummaryBlockHeading {
+  background-color: #bbd645;
+  padding: 14px 0 12px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #535353;
+}
+
+/* line 247, ../sass/layout.scss */
+.blogLatestPosts {
+  padding-right: 32px;
+}
+
+/* line 248, ../sass/layout.scss */
+.LatestPostModule, .sideBarPostSummary {
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #535353;
+  margin-bottom: 16px;
+}
+/* line 253, ../sass/layout.scss */
+.LatestPostModule img, .sideBarPostSummary img {
+  width: 142;
+  height: 170px;
+  float: left;
+  margin: 0 16px 16px 0;
+  padding: 0;
+}
+/* line 254, ../sass/layout.scss */
+.LatestPostModule h3, .sideBarPostSummary h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  margin: 0;
+}
+/* line 257, ../sass/layout.scss */
+.LatestPostModule h4, .sideBarPostSummary h4 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 26px;
+  padding: 0;
+}
+/* line 258, ../sass/layout.scss */
+.LatestPostModule .bloginfo, .sideBarPostSummary .bloginfo {
+  color: #bbd646;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+/* line 259, ../sass/layout.scss */
+.LatestPostModule p, .sideBarPostSummary p {
+  line-height: 1.3em;
+}
+/* line 260, ../sass/layout.scss */
+.LatestPostModule a, .sideBarPostSummary a {
+  color: #535353;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+/* line 263, ../sass/layout.scss */
+.LatestPostModule a:hover, .sideBarPostSummary a:hover {
+  text-decoration: underline;
+}
+
+/* line 265, ../sass/layout.scss */
+.sideBarPostSummary {
+  margin-bottom: 38px;
+  border: none;
+}
+/* line 268, ../sass/layout.scss */
+.sideBarPostSummary h3 {
+  margin-bottom: 18px;
+  text-transform: none;
+}
+/* line 269, ../sass/layout.scss */
+.sideBarPostSummary .CommentCount {
+  color: #bbd646;
+  font-size: 14px;
+  margin: 0;
+  float: right;
+}
+
+/* line 274, ../sass/layout.scss */
+.blogentry .bloginfo {
+  color: #bbd646;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 18px;
+  margin-top: 24px;
+}
+
+/* line 276, ../sass/layout.scss */
+.mainContentSideBar {
+  float: right;
+  padding: 34px 0 32px 20px;
+}
+/* line 278, ../sass/layout.scss */
+.mainContentSideBar img {
+  width: 300px;
+  height: 450px;
+  margin-bottom: 28px;
+}
+/* line 279, ../sass/layout.scss */
+.mainContentSideBar .sideBarPostSummary {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #535353;
+}
+/* line 283, ../sass/layout.scss */
+.mainContentSideBar .sideBarPostSummary .CommentCount {
+  padding-bottom: 16px;
+}
+
+/* line 288, ../sass/layout.scss */
 .footer-container {
   background-color: #D1D3D3;
 }
-/* line 204, ../sass/layout.scss */
+/* line 289, ../sass/layout.scss */
 .footer-container .large-4 {
   width: 240px;
   margin-right: 70px;
   margin-top: 60px;
 }
-/* line 208, ../sass/layout.scss */
+/* line 293, ../sass/layout.scss */
 .footer-container .large-4 h5 {
   font: 12px;
   color: #535353;
@@ -573,17 +804,17 @@ header .module {
   padding: 18px 0 14px 0;
   margin-bottom: 22px;
 }
-/* line 209, ../sass/layout.scss */
+/* line 294, ../sass/layout.scss */
 .footer-container .large-4 p {
   margin: 0;
   padding: 0;
 }
-/* line 210, ../sass/layout.scss */
+/* line 295, ../sass/layout.scss */
 .footer-container .large-4 .email a {
   text-decoration: underline;
   color: #535353;
 }
-/* line 211, ../sass/layout.scss */
+/* line 296, ../sass/layout.scss */
 .footer-container .large-4 .footerMenu {
   font: 12px;
   color: #535353;
@@ -594,13 +825,13 @@ header .module {
   border-bottom: none;
 }
 
-/* line 214, ../sass/layout.scss */
+/* line 299, ../sass/layout.scss */
 .footercopy {
   border-top: 1px solid #535353;
   margin-top: 42px;
   padding-top: 38px;
 }
-/* line 215, ../sass/layout.scss */
+/* line 300, ../sass/layout.scss */
 .footercopy .copyright {
   font-size: 10px;
   float: left;

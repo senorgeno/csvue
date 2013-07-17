@@ -16,6 +16,19 @@ class Page extends SiteTree {
 	public function SellingPage() {
 		return SellingPage::get();
 	}
+	// Blog getter template functions
+	public function HeroPost() {
+		return BlogEntry::get()->filter('HeroPost',1)->last();
+	}
+	public function FeaturedPosts() {
+		return BlogEntry::get()->filter('FeaturedPost',1);
+	}
+	public function HomePageSiderBarPost() {
+		return BlogEntry::get()->filter('HomePageSiderBarPost',1);
+	}
+	public function AllPosts() {
+		return BlogEntry::get();
+	}
 
 }
 class Page_Controller extends ContentController {

@@ -7,27 +7,27 @@ if(class_exists('Widget')) {
 	 * @package blog
 	 */
 	class ArchiveWidget extends Widget {
-	private static $db = array(
+	 static $db = array(
 			'DisplayMode' => 'Varchar'
 		);
 		
-	private static $has_one = array();
+	 static $has_one = array();
 		
-	private static $has_many = array();
+	 static $has_many = array();
 		
-	private static $many_many = array();
+	 static $many_many = array();
 		
-	private static $belongs_many_many = array();
+	 static $belongs_many_many = array();
 		
-	private static $defaults = array(
+	 static $defaults = array(
 			'DisplayMode' => 'month'
 		);
 		
-	private static $title = 'Browse by Date';
+	 static $title = 'Browse by Date';
 
-	private static $cmsTitle = 'Blog Archive';
+	 static $cmsTitle = 'Blog Archive';
 		
-	private static $description = 'Show a list of months or years in which there are blog posts, and provide links to them.';
+	 static $description = 'Show a list of months or years in which there are blog posts, and provide links to them.';
 		
 		function getCMSFields() {
 			$fields = parent::getCMSFields(); 

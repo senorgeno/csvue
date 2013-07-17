@@ -54,4 +54,14 @@ jQuery(document).ready(function($) {
 			$hover.fadeOut('slow');
 		});
 	});
+
+	// Blog Holder Page
+	var FeaturedPostHeight = 0;
+	$('.FeaturedPost').each(function(){
+		var thisHeight = $(this).height()
+		if( thisHeight > FeaturedPostHeight){
+			FeaturedPostHeight = thisHeight;
+		}
+	});
+	$('.FeaturedPost').height(FeaturedPostHeight);
 });

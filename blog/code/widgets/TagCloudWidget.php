@@ -1,30 +1,30 @@
 <?php
 
 class TagCloudWidget extends Widget {
-	private static $db = array(
+	 static $db = array(
 		"Title" => "Varchar",
 		"Limit" => "Int",
 		"Sortby" => "Varchar"
 	);
 	
-	private static $has_one = array();
+	 static $has_one = array();
 	
-	private static $has_many = array();
+	 static $has_many = array();
 	
-	private static $many_many = array();
+	 static $many_many = array();
 	
-	private static $belongs_many_many = array();
+	 static $belongs_many_many = array();
 	
-	private static $defaults = array(
+	 static $defaults = array(
 		"Title" => "Tag Cloud",
 		"Limit" => "0",
 		"Sortby" => "alphabet"
 	);
 	
-	private static $cmsTitle = "Tag Cloud";
-	private static $description = "Shows a tag cloud of tags on your blog.";
+	 static $cmsTitle = "Tag Cloud";
+	 static $description = "Shows a tag cloud of tags on your blog.";
 
-	private static $popularities = array( 'not-popular', 'not-very-popular', 'somewhat-popular', 'popular', 'very-popular', 'ultra-popular' );
+	 static $popularities = array( 'not-popular', 'not-very-popular', 'somewhat-popular', 'popular', 'very-popular', 'ultra-popular' );
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields(); 
@@ -145,6 +145,3 @@ class TagCloudWidget extends Widget {
 		return true;
 	}
 }
-
-
-?>
