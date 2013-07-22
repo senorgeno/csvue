@@ -1,10 +1,23 @@
 <div class="row" >
 	<div class="module">
-		<div class="large-12 heroImage" >
-			<p>
-				<%-- $HeroImage  TODO, get herotagline inthere --%>
-				<img class="homebanner" src="$ThemeDir/images/hero.png">
-			</p>
+		<div class="large-12 flexslider-container">
+			<div class=" heroImage flexslider" >
+				<ul class="slides">
+
+				<% loop $HeroImages %>
+				<li>
+					<% if $Link %>
+						<a href="$Link">
+					<% end_if %>
+					$Image.CroppedImage(942,374)
+					<% if $Link %>
+						</a>
+					<% end_if %>
+				</li>
+				<% end_loop %>
+
+				</ul>
+			</div>
 		</div>
 		<div class="large-12 lightBlue caseStudiesTitle" >
 			<h3 class="myrid" > Case Studies</h3>
@@ -36,7 +49,7 @@
 	<div class="module" >
 		<div class="getintouchbox clearfix">
 			<h3>We’re here to make environmental management easy!</h3>
-			<a href="contact-us" class="button rounded">Get in touch</a>
+			<a href="contact-us" class="button rounded hpb1">Get in touch</a>
 		</div>
 	</div>
 </div>
@@ -52,7 +65,7 @@
 	<div class="module" >
 		<div class="getintouchbox clearfix ReferBox">
 			<h3>Got a colleague that might be interested in CS-VUE? Email them a link and we’ll get in touch. </h3>
-			<a href="contact-us" class="button rounded ">Refer CS-VUE</a>
+			<a href="contact-us" class="button rounded hpb2">Refer CS-VUE</a>
 		</div>
 	</div>
 </div>

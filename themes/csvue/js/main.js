@@ -1,4 +1,22 @@
 jQuery(document).ready(function($) {
+	$('.flexslider').flexslider({
+			animation: "slide",              //Select your animation type (fade/slide)
+			slideshow: true,                //Should the slider animate automatically by default? (true/false)
+			slideshowSpeed: 7000,           //Set the speed of the slideshow cycling, in milliseconds
+			animationDuration: 500,         //Set the speed of animations, in milliseconds
+			directionNav: true,             //Create navigation for previous/next navigation? (true/false)
+			controlNav: true,               //Create navigation for paging control of each clide? (true/false)
+			keyboardNav: true,              //Allow for keyboard navigation using left/right keys (true/false)
+			touchSwipe: true,               //Touch swipe gestures for left/right slide navigation (true/false)
+			prevText: "Previous",           //Set the text for the "previous" directionNav item
+			nextText: "Next",               //Set the text for the "next" directionNav item
+			randomize: false,                //Randomize slide order on page load? (true/false)
+			slideToStart: 0,                //The slide that the slider should start on. Array notation (0 = first slide)
+			pauseOnAction: true,            //Pause the slideshow when interacting with control elements, highly recommended. (true/false)
+			pauseOnHover: false,
+			useCSS:false        //Pause the slideshow when hovering over slider, then resume when no longer hovering (true/false)
+			//controlsContainer: ".flexslider-container"           //Advanced property: Can declare which container the navigation elements should be appended too. Default container is the flexSlider element. Example use would be ".flexslider-container", "#container", etc. If the given element is not found, the default action will be taken.
+		});
 
 	// Top Menu Rollovers 
 	$('.topMenuLi').each(function(){

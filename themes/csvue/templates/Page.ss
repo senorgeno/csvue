@@ -13,7 +13,9 @@
         <meta name="viewport" content="width=device-width">
 
 	$MetaTags(false)
+	<link rel="stylesheet" type="text/css" href="themes/csvue/flexslider/flexslider.css" />
 	<% require themedCSS('app') %>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -32,7 +34,7 @@
 	<header class="row" >
 		<div class="module" >
 	        <div class="large-12 header-container clearfix">
-			    <a href="home"><img class="logo" src="$ThemeDir/images/cs-vue.gif" alt="$Title" title="$Title" /></a>
+			    <a href="home"><img class="logo" src="$ThemeDir/images/CS-Vue-logo-taglineOP.png" alt="$Title" title="$Title" /></a>
 			 
 			    <nav >
 			    	<section class="topMenu">
@@ -108,6 +110,7 @@
 	
 	<script src="$ThemeDir/javascripts/foundation/foundation.js"></script>
 	<script src="$ThemeDir/javascripts/foundation/foundation.dropdown.js"></script>
+	<script src="$ThemeDir/flexslider/jquery.flexslider.js"></script>
     <script src="$ThemeDir/js/main.js"></script>
     </body>
 </html>

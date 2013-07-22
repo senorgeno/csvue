@@ -33,14 +33,14 @@ border-radius: 4px;}
 header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .header-container {}
 
-.logo{ width:427px; height: 63px; margin-top:16px;margin-bottom: 8px;float:left;}
+.logo{ width:428px; height: 68px; margin-top:16px;margin-bottom: 8px;float:left;margin-left: -5px;}
 
 .menuContainer {margin-top: 57px;}
 
 .top-bar-section {position: absolute;bottom: 0; right: 0;}
 //emCalc
 // Top Menu
-.topMenu {float:right; margin: 60px 0 0 0;border:0;}
+.topMenu {float:right; margin: 55px 0 0 0;border:0;}
 .topMenu ul{margin:0;padding:0;
 	li {
 		list-style: none; margin:0;padding:0; float: left;
@@ -87,7 +87,114 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 }
 
 // Home Page Styles 
-.heroImage p {margin-bottom: 0;}
+.heroImage  {
+	width: 942px;
+margin-bottom: 0;
+  ul {float: none; height: 0;}
+}
+/* ======================================================= */
+/* #FLEX SLIDER MODS */
+/* ======================================================= */
+
+.flexslider {
+	background: transparent;
+	border: 0 solid #fff;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+		 -o-border-radius: 0;
+			border-radius: 0;
+			}
+.flexslider-container {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.slider-shadow:after {
+	content:"\00a0";
+	background: url("../images/theme/slide-shadow.png") bottom center no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	overflow: visible;
+	display: block;
+	position: absolute;
+	margin-top: -32px;
+    height: 62px;  /* Same as your image height */
+    width: 100%;  /* Same as your image width */
+}
+
+/* Caption style
+*********************************/
+.slides li{overflow: hidden;}
+.flex-caption {width: 100%; z-index: 98; padding: 22px; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 15px; line-height: 21px; margin-bottom: 0;}
+
+/* Next/Previous Buttons
+*********************************/
+.flex-direction-nav{overflow: hidden; margin: 0;}
+.flex-direction-nav li{margin-bottom: 0;}
+.flex-direction-nav li a {width: 45px; height: 38px; margin: -13px 0 0; display: block; background: url("../flexslider/images/flexslider_direction_nav.png") no-repeat 0 0; position: absolute; top: 45%; cursor: pointer; text-indent: -9999px;} /* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
+
+.flex-direction-nav li a.next {background-position: -42px 0; right: -150; text-indent: -9999px;} /* default position */
+.flex-direction-nav li a.prev {background-position: 0 0; left: -150; text-indent: -9999px;} /* default position */
+
+.flex-direction-nav li a.next, .flex-direction-nav li a.prev, .flex-control-nav { /* default opacity */
+			  -moz-opacity:0.0;
+     filter: alpha(opacity=00);
+     			   opacity:0.0;
+	   -moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	     -o-transition: all .3s ease-in-out;
+	        transition: all .3s ease-in-out;
+}
+.flexslider-container:hover li a.next,.flexslider-container:hover li a.prev{  /* hover opacity */
+			   -moz-opacity:0.7 !important;
+      filter: alpha(opacity=70) !important;
+     			    opacity:0.7 !important;
+}
+.flex-direction-nav li a.next:hover,.flex-direction-nav li a.prev:hover{  /* hover opacity */
+			   -moz-opacity:1.0 !important;
+     filter: alpha(opacity=100) !important;
+     			    opacity:1.0 !important;
+}
+.flexslider-container:hover li a.next {right: 30px;} /* hover position */
+.flexslider-container:hover li a.prev {left: 30px;} /* hover position */
+
+/* Control Nav
+*********************************/
+.flex-control-nav {
+	/* background: white; */
+	/*background: rgba(255,255,255,0.02); */
+	margin: 0 0 0 0;
+	position: absolute;
+	bottom: 16px;
+		width: 100%;
+		text-align:center;
+	/* left: inherit;
+	right: 18px; */
+	/* padding: 8px;
+	list-style: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px; */
+	/* border: 1px solid white; */
+	/* border: 1px solid rgba(255,255,255,0.02); */
+			  -moz-opacity:0.0;
+     filter: alpha(opacity=00);
+     			   opacity:0.0;
+}
+.flexslider-container:hover .flex-control-nav{
+			  -moz-opacity:1;
+  filter: alpha(opacity=100);
+     			   opacity:1;
+}
+.flex-control-nav li {margin: 0 0 0 5px; /* float: left; */}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; background: url("../flexslider/images/flexslider_control_nav.png") no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+
 
 .lightBlue {background-color: $lightBlue;}
 .lightGreen{background-color: $lightGreen}
@@ -102,7 +209,7 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .hoverContainer {background:url('../images/hoverPlusSmall.png') no-repeat center center rgba(68,69,68,0.8); position:absolute; top:0; left:0; right:0;bottom: 0;z-index: 3; display: none;}
 .hoverContainerLarge {background:url('../images/hoverPlusLarge.png') no-repeat center center rgba(68,69,68,0.8); position:absolute; top:0; left:0; right:0;bottom: 0;z-index: 3; display: none;}
 
-.getintouchbox{ background-color: #434545;  padding: 21px; margin-top: 28px;
+.getintouchbox{ background-color: #434545;  padding: 32px 21px 6px 21px; margin-top: 28px;
 	h3 {display:inline-block; max-width: 578px;flaot:left;color: #FFF; font-size: 22px;font-style: italic;font-weight: normal;}
 	a {display:inline-block;float:right;}
 }
@@ -118,9 +225,10 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .ReferBox {
 	margin-top: 52px;
 	margin-bottom: 45px;
-	padding-bottom: 5px;
+	padding: 18px 21px 8px 21px;
 	a{ margin-top: 15px;}
 }
+
 // caseStudyCategory Page
 //380 × 224
 .ContentTop {border-top: 1px solid #a7a9ab;}

@@ -1,0 +1,24 @@
+{
+	"name": "rywa/silverstripe-foundation-forms",
+	"type": "silverstripe-module",
+	"description": "SilverStripe 3 Forms Compatible with Zurb Foundation Framework",
+	"keywords": ["silverstripe", "forms", "zurbfoundation"],
+	"license": "MIT Open Source License",
+	"authors": [
+		{
+			"name": "Ryan Wachtl",
+			"homepage": "http://ryanwachtl.com"
+		}
+	],
+	"require": 
+	{
+		"composer/installers": "*",
+		"silverstripe/framework": ">=3.0"
+	},
+	"extra": {
+		"installer-name": "foundationforms"
+	},
+	"support": {
+		"issues": "https://github.com/ryanwachtl/silverstripe-foundation-forms/issues"
+	}
+}
