@@ -28,7 +28,7 @@
 <div class="row">
 	<div class="large-3 small-6 columns csContainer " >
 		<div class="casestudiesHomePageintro lightBlue cs" >
-			<p class="myrid">Check out how some of our customers are benefiting from using CS-VUE</p>
+			<p class="myrid">CS-VUE provides online systems for environmental management across a wide range of industries. Check out some of our customer case studies.</p>
 		</div>
 	</div>
 	<% loop CaseStudyCategories %>

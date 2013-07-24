@@ -1029,9 +1029,11 @@ label {
   font-family: Lucida Sans, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   margin-bottom: 11px;
   margin-top: 14px;
+  display: block;
+  width: 100%;
 }
 
-/* line 406, ../sass/layout.scss */
+/* line 407, ../sass/layout.scss */
 fieldset input, fieldset textarea {
   border: 1px solid #cecece !important;
   border-radius: 3px;
@@ -1039,27 +1041,33 @@ fieldset input, fieldset textarea {
   color: #d1d3d4 !important;
 }
 
-/* line 407, ../sass/layout.scss */
+/* line 408, ../sass/layout.scss */
 fieldset textarea {
   min-height: 112px !important;
 }
 
-/* line 408, ../sass/layout.scss */
+/* line 409, ../sass/layout.scss */
+.fieldadjust {
+  width: 100%;
+  float: left;
+}
+
+/* line 410, ../sass/layout.scss */
 #Form_ContactForm_action_doContactForm {
   margin-left: 94px;
 }
 
-/* line 410, ../sass/layout.scss */
+/* line 412, ../sass/layout.scss */
 .footer-container {
   background-color: #D1D3D3;
 }
-/* line 411, ../sass/layout.scss */
+/* line 413, ../sass/layout.scss */
 .footer-container .large-4 {
   width: 240px;
   margin-right: 70px;
   margin-top: 60px;
 }
-/* line 415, ../sass/layout.scss */
+/* line 417, ../sass/layout.scss */
 .footer-container .large-4 h5 {
   font: 12px;
   color: #535353;
@@ -1069,17 +1077,17 @@ fieldset textarea {
   padding: 18px 0 14px 0;
   margin-bottom: 22px;
 }
-/* line 416, ../sass/layout.scss */
+/* line 418, ../sass/layout.scss */
 .footer-container .large-4 p {
   margin: 0;
   padding: 0;
 }
-/* line 417, ../sass/layout.scss */
+/* line 419, ../sass/layout.scss */
 .footer-container .large-4 .email a {
   text-decoration: underline;
   color: #535353;
 }
-/* line 418, ../sass/layout.scss */
+/* line 420, ../sass/layout.scss */
 .footer-container .large-4 .footerMenu {
   font: 12px;
   color: #535353;
@@ -1090,13 +1098,13 @@ fieldset textarea {
   border-bottom: none;
 }
 
-/* line 421, ../sass/layout.scss */
+/* line 423, ../sass/layout.scss */
 .footercopy {
   border-top: 1px solid #535353;
   margin-top: 42px;
   padding-top: 38px;
 }
-/* line 422, ../sass/layout.scss */
+/* line 424, ../sass/layout.scss */
 .footercopy .copyright {
   font-size: 10px;
   float: left;

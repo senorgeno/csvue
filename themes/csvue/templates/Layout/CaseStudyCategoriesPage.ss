@@ -3,7 +3,7 @@
 		<h1> Case Studies </h1>
 	</div>
 </div>
-<% loop $Children %>
+<% loop $CaseStudies %>
 	<div class="row" >
 		<div class="module caseStudiesHolder clearfix">
 			<div class="caseStudiesHolderPhoto">

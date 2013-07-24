@@ -12,7 +12,14 @@ class CaseStudyCategoriesPage extends Page {
 		return $this->obj('Image')->filename;
 	}
 
+	public function CaseStudies() {
+		if($this->parent()->className != 'SiteTree'){
+			return $this->children();
+		} else {
+			return CaseStudyPage::get();
 
+		}
+	}
 
 	public function getGeneratedCMSFields() {
 

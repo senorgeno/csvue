@@ -12,10 +12,10 @@ class ContactPage_Controller extends Page_Controller {
 
 	public function ContactForm() {
 		$fields =  new FieldList(array(
-			TextField::create('Name','Your Name' )->setAttribute('required', true),
-			EmailField::create('Email')->setAttribute('required', true),
-			TextField::create('Phone', 'Phone (optional)'),
-			TextareaField::create('Message')->setAttribute('required', true)
+			TextField::create('Name','Your Name' )->setAttribute('required', true)->addExtraClass('fieldadjust'),
+			EmailField::create('Email')->setAttribute('required', true)->addExtraClass('fieldadjust'),
+			TextField::create('Phone', 'Phone (optional)')->addExtraClass('fieldadjust'),
+			TextareaField::create('Message')->setAttribute('required', true)->addExtraClass('fieldadjust')
 		));
 		$actions = new FieldList(array(
 			FormAction::create('doContactForm', 'Contact CS-VUE')->addExtraClass('button rounded')
