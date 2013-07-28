@@ -1,3 +1,16 @@
+// Responsive NAV Stuff
+/* styles for desktop */
+.tinynav { display: none }
+
+/* styles for mobile */
+@media screen and (max-width: 668px) {
+    .tinynav { display: block; width: 100%;}
+    #nav { display: none }
+}
+// End Responsive NAV
+
+
+
 
 $lightBlue : #0096d9;
 $lightGray : #a7a9ab;
@@ -6,14 +19,16 @@ $lightGreen : #bbd645;
 $LinkGreen : #c0d959;
 $sans: 'MS Sans Serif', Geneva, sans-serif;
 $lucaGrande : Lucida Sans, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+$small : 668px;
 
 p {color: $darkGray;font-size: 14px;line-height:1.3em;font-family: $sans;}
 a { color: $LinkGreen;}
 h1 { color:#282828;font-size:32px; font-family: "MyriadPro-Regular", times ,sans-serif; font-weight:bold;}
+h2 {color: $lightBlue;font-size: 24px;font-weight: bold;}
 h3 { text-decoration:uppercase;font-size:16px; font-weight:bold;color:$darkGray;} 
 h4 { font-size:14px;color:$darkGray;font-weight:normal;margin-bottom:1px; }
 h5 {font-size: 14px; line-height: 1.3em;}
-
+img{max-width:100% ;  height:auto;}
 body{}
 .row {padding-top:0; padding-bottom:0;margin-top: 0;margin-bottom:0;}
 .module { margin: 0 10px;}
@@ -41,7 +56,17 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .top-bar-section {position: absolute;bottom: 0; right: 0;}
 //emCalc
 // Top Menu
-.topMenu {float:right; margin: 55px 0 0 0;border:0;}
+.topMenu {
+
+  float:right; margin: 55px 0 0 0;border:0;
+  @media (max-width: 945px) {
+      margin: 0;
+  }
+  @media (max-width: $small) {
+    margin: 6px 16px 0 0;border:0;float: none;
+  }
+}
+
 .topMenu ul{margin:0;padding:0;
 	li {
 		list-style: none; margin:0;padding:0; float: left;
@@ -73,7 +98,7 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 					font-size: 10px;
 					line-height: 1.3em;
 				}
-				a:hover{color:#266a90;}
+				a:hover{color:$lightGreen;}
 				
 			}
 		}
@@ -84,27 +109,31 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .MenuHover {background-color: $lightBlue; position:absolute; top:0; left:0; right:0;bottom: 0;display: none;}
  
 .tagline { 
-	h2 {font-size:emCalc(20px);font-weight: bold;padding-top:7px; padding-bottom:3px; }
+	h2 {font-size:emCalc(20px);font-weight: bold;padding-top:7px; padding-bottom:3px;
+	color:$lightGreen; }
 }
 
 // Home Page Styles 
 .heroImage  {
 	width: 942px;
-margin-bottom: 0;
-  ul {float: none; height: 0;}
+
+
 }
 /* ======================================================= */
 /* #FLEX SLIDER MODS */
 /* ======================================================= */
 
 .flexslider {
+  margin-bottom: 0;
 	background: transparent;
 	border: 0 solid #fff;
 	-webkit-border-radius: 0;
 	   -moz-border-radius: 0;
 		 -o-border-radius: 0;
 			border-radius: 0;
-			}
+  ul {float: none; height: 0;}
+}
+
 .flexslider-container {
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -127,7 +156,7 @@ margin-bottom: 0;
 
 /* Caption style
 *********************************/
-.slides li{overflow: hidden;}
+.slides li{overflow: hidden; }
 .flex-caption {width: 100%; z-index: 98; padding: 22px; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 15px; line-height: 21px; margin-bottom: 0;}
 
 /* Next/Previous Buttons
@@ -211,17 +240,28 @@ margin-bottom: 0;
 .hoverContainerLarge {background:url('../images/hoverPlusLarge.png') no-repeat center center rgba(68,69,68,0.8); position:absolute; top:0; left:0; right:0;bottom: 0;z-index: 3; display: none;}
 
 .getintouchbox{ background-color: #434545;  padding: 32px 21px 6px 21px; margin-top: 28px;
-	h3 {display:inline-block; max-width: 578px;flaot:left;color: #FFF; font-size: 22px;font-style: italic;font-weight: normal;}
+	h3 {display:inline-block;flaot:left;color: #FFF; font-size: 22px;font-style: italic;font-weight: normal;}
 	a {display:inline-block;float:right;}
 }
 .aboutTitle {margin-top: 34px;
 	h3 { color: $darkGray;}
 }
 .HomepageLink {color: $darkGray;font-size: 12px;font-weight: normal; text-transform: uppercase; text-decoration: underline;}
-.SellingPageContainer {width: 300px;margin:0 10px;
+.SellingPageContainer {width: 300px;margin:0 10px 34px 10px;
 	img {width: 300; height: 157;}
-	h5 {color: $darkGray;font-size: 12px;font-weight: bold;}
+	h5 {color: $darkGray;font-size: 16px;font-weight: bold; color:$lightBlue;}
 	p {color: $darkGray;font-size: 12px;font-weight: normal;}
+    @media (max-width: 950px) {
+     width: 100%;
+      .sellingImage {
+        border-right: 20px solid white;
+        background-color: $lightGreen;
+        img { margin:0 auto;display:inherit;}
+
+      }
+      h5 {text-align: left;}
+      p {text-align: left;}
+    }
 }
 .ReferBox {
 	margin-top: 52px;
@@ -234,32 +274,51 @@ margin-bottom: 0;
 //380 × 224
 .ContentTop {border-top: 1px solid #a7a9ab;}
 .caseStudiesHolderTop {height:144px;
-	h1 {padding-top:30px;}
+  h1 {padding-top:30px;}
+  @media (max-width:$small)  {
+    height: 92px;
+  }
 }
 .caseStudiesHolder{
 	border-top: 1px solid #a7a9ab;border-bottom: 1px solid #a7a9ab;height:225px;
 	margin-bottom:16px;
 	position: relative;
 	div {float:left;}
-	.button { position:absolute; bottom:-2px;right:0;}
+	.button { position:absolute; bottom:-2px;right:0;
+      @media (max-width:$small)  {
+        position: relative;
+        bottom: 36px;
+      }
+
+	}
 }
 .caseStudiesHolderPhoto {
 	
 	max-width:380px;
 	img { width:380px;height:224px;}
+
 }
+.caseStudiesHolderPhoto > p {margin: 0;padding: 0; font-size: 0;}
 .caseStudiesHolderLogo {
 	margin-left:15px;
 	margin-right:15px;
 	max-width:260px;
 	img {width:260px;height:223px;}
+    @media (max-width:$small)  {
+      margin-left: 0;
+      margin-right: 0;
+      img {height: auto;}
+    }
 }
 .caseStudiesSummary {
 	padding-left:5px;
 	max-width:272px;
 	height: 224px;
 	overflow:hidden;
-	
+  @media (max-width:$small)  {
+    height: auto;
+    overflow: visible;
+  }
 	
 	h3 { padding-bottom:8px; margin-top:24px; font-size:12px;
 		}
@@ -277,7 +336,7 @@ margin-bottom: 0;
 	border-bottom: 1px solid #d1d3d4;
 	padding-bottom:24px;
 	h1 { border-bottom: 1px solid #d1d3d4;padding-bottom:24px;margin-bottom:24px;font-size:32px;color:#535353; font-family: "lucida_sans_regular", times ,sans-serif; font-weight:normal;}
-	h2 {font-family:"lucida_sans_bold";font-size: 14px;margin: 24px 0 ;color:$darkGray;}
+	h2 {font-size: 22px;margin: 24px 0 ;color:$lightBlue;font-weight: bold;}
 	h3 {text-transform:uppercase;
 		font-size: 18px;
 		}
@@ -298,7 +357,7 @@ margin-bottom: 0;
 	overflow:hidden;
 	img {float:left; width: 116px;height:124px;margin-right:42px;margin-bottom:18px;}
 	h3 {font-size:14px; font-weight:normal; margin-top:21px;margin-bottom:-5px;}
-	h4 {font-size:14px; font-weight:normal; font-style:italic;margin-bottom:10px;}
+	h4 {font-size:14px; font-weight:bold; font-style:italic;margin-bottom:10px;}
 	p { font-size:13px;}
 }
 
@@ -374,7 +433,7 @@ margin-bottom: 0;
 .sideBarPostSummary { 
 	margin-bottom: 38px;
 	border: none;
-	h3 {margin-bottom: 18px; text-transform: none; }
+	h3 {margin-bottom: 18px; text-transform: none;}
 	.CommentCount {color: #bbd646;font-size: 14px;margin: 0; float:right;}
 }
 
@@ -417,8 +476,19 @@ fieldset textarea {min-height:112px !important;}
 		h5 {font: 12px; color:$darkGray; text-transform: uppercase; border-top: 1px solid $darkGray;border-bottom: 1px solid $darkGray; padding: 18px 0 14px 0;margin-bottom: 22px;}
 		p { margin: 0; padding: 0;}
 		.email a {text-decoration: underline;color: $darkGray;}
-		.footerMenu {font: 12px; color:$darkGray; text-transform: uppercase; border-top: 1px solid $darkGray;padding: 16px 0 13px 0; margin-bottom: 0; border-bottom: none;}
+		.footerMenu {font: 12px; color:$darkGray; text-transform: uppercase; border-top: 1px solid $darkGray;padding: 16px 0 13px 0; margin-bottom: 0; border-bottom: none;
+
+		}
+      @media (max-width: $small) {
+        width: 100%;
+        margin-right: 0;
+      }
 	}
+}
+.footerBlogLatest {
+	h6 {font-size:14px; font-weight:bold; color:#444545; margin:20px 0 0 0;}
+	.date {font-size: 14px;margin: 0;line-height: 1em;}
+
 }
 .footercopy {border-top:1px solid $darkGray; margin-top: 42px; padding-top: 38px;
 	.copyright {font-size: 10px;float: left;}

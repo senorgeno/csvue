@@ -1,4 +1,12 @@
+
+
 jQuery(document).ready(function($) {
+	$("#nav").tinyNav({
+	  active: 'active', // String: Set the "active" class
+	  header: 'Navigation', // String: Specify text for "header" and show header instead of the active item
+	  label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+	});
+
 	$('.flexslider').flexslider({
 			animation: "slide",              //Select your animation type (fade/slide)
 			slideshow: true,                //Should the slider animate automatically by default? (true/false)
@@ -14,7 +22,7 @@ jQuery(document).ready(function($) {
 			slideToStart: 0,                //The slide that the slider should start on. Array notation (0 = first slide)
 			pauseOnAction: true,            //Pause the slideshow when interacting with control elements, highly recommended. (true/false)
 			pauseOnHover: false,
-			useCSS:false        //Pause the slideshow when hovering over slider, then resume when no longer hovering (true/false)
+			useCSS:true        //Pause the slideshow when hovering over slider, then resume when no longer hovering (true/false)
 			//controlsContainer: ".flexslider-container"           //Advanced property: Can declare which container the navigation elements should be appended too. Default container is the flexSlider element. Example use would be ".flexslider-container", "#container", etc. If the given element is not found, the default action will be taken.
 		});
 

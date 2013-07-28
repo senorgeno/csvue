@@ -1,0 +1,11 @@
+Their CMS 
+
+Add Spaces to Tagline
+ADD this to Home page Cae studier intro 
+	CS-VUE provides online systems for environmental management across a wide range of industries. Check out some of our customer case studies.
+
+
+Add Social Logo's
+
+ADD  to Get in Touch Page
+<a href="contact-us" class="button rounded hpb1">Get in touch</a>

@@ -37,8 +37,8 @@
 			    <a href="home"><img class="logo" src="$ThemeDir/images/CS-Vue-logo-taglineOP.png" alt="$Title" title="$Title" /></a>
 			 
 			    <nav >
-			    	<section class="topMenu">
-					    <ul>
+			    	<section class="topMenu" >
+					    <ul id="nav">
 						<% loop $Menu(1) %>
 						<li class="<% if LinkingMode == current %>active<% end_if %> topMenuLi">
 							<div class="MenuHover" ></div>
@@ -75,7 +75,7 @@
         <div class="row">
         	<div class="module" >
         		<div class="large-4 columns">
-        			<h5>TALK TO US ABOUT COMPLIANCE,INCIDENT MANAGEMENT &amp; AUDIT SYSTEMS</h5>
+        			<h5>TALK TO US ABOUT COMPLIANCE,INCIDENT MANAGEMENT OR AUDIT SYSTEMS</h5>
         			<div class="address">
         				$SiteConfig.Address
         			</div>
@@ -86,9 +86,12 @@
         				<a href="mailto:$SiteConfig.email">$SiteConfig.email</a>
         			</div>
         		</div>
-        		<div class="large-4 columns">
+        		<div class="large-4 columns footerBlogLatest">
         			<h5> Recent Articles</h5>
-        			<%-- TODO LOOP RECENT BLOG POSTS --%>
+        			<% loop LatestBlogPosts %>
+        				<a href="$Link"><h6 class="">$Title</h6></a>
+        				<p class="date"> $Date.Long </p>
+        			<% end_loop %>
         		</div>
         		<div class="large-4 columns">
         			<a href="home"><h5 class="footerMenu">Home</h5></a>
@@ -100,16 +103,16 @@
         </div>
         <div class="row">
         	<div class="module footercopy" >
-        		<p class="copyright">&copy;$SiteConfig.copyright</P>
+        		<p class="copyright">&copy; $SiteConfig.copyright</P>
         		<% include SocialLinks %>
         	</div>
         </div>
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>-->
-	
+
 	<script src="$ThemeDir/javascripts/foundation/foundation.js"></script>
-	<script src="$ThemeDir/javascripts/foundation/foundation.dropdown.js"></script>
+	<script src="$ThemeDir/js/tinynav.min.js"></script>
 	<script src="$ThemeDir/flexslider/jquery.flexslider.js"></script>
     <script src="$ThemeDir/js/main.js"></script>
     </body>

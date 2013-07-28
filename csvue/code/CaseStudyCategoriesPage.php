@@ -4,7 +4,7 @@ class CaseStudyCategoriesPage extends Page {
 
 
 	static $has_one = array (
-		'Image' => 'Image',
+		'CaseStudyImage' => 'Image',
 	);
 
 
@@ -25,7 +25,7 @@ class CaseStudyCategoriesPage extends Page {
 
 		$fields = parent::getCMSFields();
 
-		$fields->addFieldToTab("Root.Main", $image = UploadField::create('Image', _t('CaseStudyHolderPage.IMAGE', 'Image')), 'Content');
+		$fields->addFieldToTab("Root.Main", $image = UploadField::create('CaseStudyImage', _t('CaseStudyHolderPage.IMAGE', 'Image')), 'Content');
 		$image->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 
 

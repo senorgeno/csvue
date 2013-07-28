@@ -6,6 +6,7 @@ class BlogEntryExtension extends DataExtension {
 		'HeroPost'    => 'Boolean',
 		'HomePageSiderBarPost' => 'Boolean'
 	);
+
 	static $has_one = array(
 		'Image' => 'Image'
 	);
@@ -17,7 +18,6 @@ class BlogEntryExtension extends DataExtension {
 		$fields->addFieldToTab('Root.Main', new CheckboxField('FeaturedPost','Featured Post'),'Content');
 		$fields->addFieldToTab('Root.Main', new LiteralField('literal','Add this post to the Media and News Sidebar section'),'Content');
 		$fields->addFieldToTab('Root.Main', new CheckboxField('HomePageSiderBarPost','Side Bar'),'Content');
-		$fields->addFieldToTab('Root.Images',new UploadField('Image'));
 		return $fields;
 	}
 }

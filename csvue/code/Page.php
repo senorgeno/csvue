@@ -4,14 +4,22 @@ class Page extends SiteTree {
 	public static $db = array(
 	);
 
-	public static $has_one = array(
+	static $has_one = array(
+		'PageImage' => 'Image'
 	);
 
 	public function Socials() {
 		return Social::get();
 	}
 	public function CaseStudyCategories() {
-		return CaseStudyCategoriesPage::get();
+		$cs = CaseStudyCategoriesPage::get();
+		$al = new ArrayList();
+		foreach ($cs as $caseStudy) {
+			if($caseStudy->parent()->className != 'SiteTree') {
+				$al->push($caseStudy);
+			}
+		}
+		return $al;
 	}
 	public function SellingPage() {
 		return SellingPage::get();
@@ -20,14 +28,27 @@ class Page extends SiteTree {
 	public function HeroPost() {
 		return BlogEntry::get()->filter('HeroPost',1)->last();
 	}
+
 	public function FeaturedPosts() {
 		return BlogEntry::get()->filter('FeaturedPost',1);
 	}
+
 	public function HomePageSiderBarPost() {
 		return BlogEntry::get()->filter('HomePageSiderBarPost',1);
 	}
+
 	public function AllPosts() {
 		return BlogEntry::get();
+	}
+
+	public function LatestBlogPosts()  {
+		return BlogEntry::get()->sort('ID','DESC')->limit(5);
+	}
+
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
+		$fields->addFieldToTab('Root.Images',new UploadField('Image'));
+		return $fields;
 	}
 
 }

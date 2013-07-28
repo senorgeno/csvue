@@ -1,7 +1,7 @@
 <div class="row" >
 	<% loop SellingPage %>
 	<a href="$Link">
-	<div class="large-4 columns SellingPageContainer">
+	<div class="large-4 small-12 columns SellingPageContainer">
 		<div class="sellingImage">
 			<img src="$BannerUrl" alt="$Title" title="$Title">
 			<div class="hoverContainerLarge" ></div>

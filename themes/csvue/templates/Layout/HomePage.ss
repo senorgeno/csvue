@@ -1,9 +1,8 @@
 <div class="row" >
 	<div class="module">
 		<div class="large-12 flexslider-container">
-			<div class=" heroImage flexslider" >
+			<div class="flexslider" >
 				<ul class="slides">
-
 				<% loop $HeroImages %>
 				<li>
 					<% if $Link %>
@@ -15,7 +14,6 @@
 					<% end_if %>
 				</li>
 				<% end_loop %>
-
 				</ul>
 			</div>
 		</div>
@@ -28,10 +26,10 @@
 <div class="row">
 	<div class="large-3 small-6 columns csContainer " >
 		<div class="casestudiesHomePageintro lightBlue cs" >
-			<p class="myrid">CS-VUE provides online systems for environmental management across a wide range of industries. Check out some of our customer case studies.</p>
+			<p class="myrid">$CaseStudiesIntro</p>
 		</div>
 	</div>
-	<% loop CaseStudyCategories %>
+	<% loop $CaseStudyCategories %>
 	<a href="$Link">
 	<div class="large-3 small-6 columns csContainer" >
 		<div class="cs" >
@@ -61,11 +59,3 @@
 	</div>
 </div>
 <% include AboutBanners %>
-<div class="row" >
-	<div class="module" >
-		<div class="getintouchbox clearfix ReferBox">
-			<h3>Got a colleague that might be interested in CS-VUE? Email them a link and we’ll get in touch. </h3>
-			<a href="contact-us" class="button rounded hpb2">Refer CS-VUE</a>
-		</div>
-	</div>
-</div>
