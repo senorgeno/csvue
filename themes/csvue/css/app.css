@@ -7813,7 +7813,26 @@ header .module {
   float: right;
 }
 
+/* line 439, ../sass/layout.scss */
+.pagination {
+  margin: 8px 0 0 0;
+  height: 1.3em;
+}
 /* line 442, ../sass/layout.scss */
+.pagination ul {
+  float: left;
+}
+/* line 445, ../sass/layout.scss */
+.pagination .disabled {
+  color: #a7a9ab;
+}
+
+/* line 447, ../sass/layout.scss */
+.spacer {
+  height: 20px;
+}
+
+/* line 451, ../sass/layout.scss */
 .blogentry .bloginfo {
   color: #bbd646;
   font-size: 14px;
@@ -7822,29 +7841,29 @@ header .module {
   margin-top: 24px;
 }
 
-/* line 444, ../sass/layout.scss */
+/* line 453, ../sass/layout.scss */
 .mainContentSideBar {
   float: right;
   padding: 34px 0 32px 20px;
 }
-/* line 446, ../sass/layout.scss */
+/* line 455, ../sass/layout.scss */
 .mainContentSideBar img {
   width: 300px;
   height: 450px;
   margin-bottom: 28px;
 }
-/* line 447, ../sass/layout.scss */
+/* line 456, ../sass/layout.scss */
 .mainContentSideBar .sideBarPostSummary {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: 1px solid #535353;
 }
-/* line 451, ../sass/layout.scss */
+/* line 460, ../sass/layout.scss */
 .mainContentSideBar .sideBarPostSummary .CommentCount {
   padding-bottom: 16px;
 }
 
-/* line 457, ../sass/layout.scss */
+/* line 466, ../sass/layout.scss */
 .contactpage h2 {
   margin-bottom: 16px;
   margin-top: 20px;
@@ -7854,19 +7873,19 @@ header .module {
   font-weight: normal;
 }
 
-/* line 459, ../sass/layout.scss */
+/* line 468, ../sass/layout.scss */
 .contactMain {
   padding-right: 90px;
 }
 
-/* line 462, ../sass/layout.scss */
+/* line 471, ../sass/layout.scss */
 fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 463, ../sass/layout.scss */
+/* line 472, ../sass/layout.scss */
 label {
   font-size: 14px;
   font-weight: bold;
@@ -7877,7 +7896,7 @@ label {
   width: 100%;
 }
 
-/* line 466, ../sass/layout.scss */
+/* line 475, ../sass/layout.scss */
 fieldset input, fieldset textarea {
   border: 1px solid #cecece !important;
   border-radius: 3px;
@@ -7885,33 +7904,33 @@ fieldset input, fieldset textarea {
   color: #d1d3d4 !important;
 }
 
-/* line 467, ../sass/layout.scss */
+/* line 476, ../sass/layout.scss */
 fieldset textarea {
   min-height: 112px !important;
 }
 
-/* line 468, ../sass/layout.scss */
+/* line 477, ../sass/layout.scss */
 .fieldadjust {
   width: 100%;
   float: left;
 }
 
-/* line 469, ../sass/layout.scss */
+/* line 478, ../sass/layout.scss */
 #Form_ContactForm_action_doContactForm {
   margin-left: 94px;
 }
 
-/* line 471, ../sass/layout.scss */
+/* line 480, ../sass/layout.scss */
 .footer-container {
   background-color: #D1D3D3;
 }
-/* line 472, ../sass/layout.scss */
+/* line 481, ../sass/layout.scss */
 .footer-container .large-4 {
   width: 240px;
   margin-right: 70px;
   margin-top: 60px;
 }
-/* line 476, ../sass/layout.scss */
+/* line 485, ../sass/layout.scss */
 .footer-container .large-4 h5 {
   font: 12px;
   color: #535353;
@@ -7921,17 +7940,17 @@ fieldset textarea {
   padding: 18px 0 14px 0;
   margin-bottom: 22px;
 }
-/* line 477, ../sass/layout.scss */
+/* line 486, ../sass/layout.scss */
 .footer-container .large-4 p {
   margin: 0;
   padding: 0;
 }
-/* line 478, ../sass/layout.scss */
+/* line 487, ../sass/layout.scss */
 .footer-container .large-4 .email a {
   text-decoration: underline;
   color: #535353;
 }
-/* line 479, ../sass/layout.scss */
+/* line 488, ../sass/layout.scss */
 .footer-container .large-4 .footerMenu {
   font: 12px;
   color: #535353;
@@ -7942,34 +7961,34 @@ fieldset textarea {
   border-bottom: none;
 }
 @media (max-width: 668px) {
-  /* line 472, ../sass/layout.scss */
+  /* line 481, ../sass/layout.scss */
   .footer-container .large-4 {
     width: 100%;
     margin-right: 0;
   }
 }
 
-/* line 489, ../sass/layout.scss */
+/* line 498, ../sass/layout.scss */
 .footerBlogLatest h6 {
   font-size: 14px;
   font-weight: bold;
   color: #444545;
   margin: 20px 0 0 0;
 }
-/* line 490, ../sass/layout.scss */
+/* line 499, ../sass/layout.scss */
 .footerBlogLatest .date {
   font-size: 14px;
   margin: 0;
   line-height: 1em;
 }
 
-/* line 493, ../sass/layout.scss */
+/* line 502, ../sass/layout.scss */
 .footercopy {
   border-top: 1px solid #535353;
   margin-top: 42px;
   padding-top: 38px;
 }
-/* line 494, ../sass/layout.scss */
+/* line 503, ../sass/layout.scss */
 .footercopy .copyright {
   font-size: 10px;
   float: left;

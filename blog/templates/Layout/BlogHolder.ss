@@ -13,7 +13,7 @@
 	<% end_if %>
 	
 	<% if BlogEntries %>
-		<% loop BlogEntries %>
+		<% loop BlogEntries() %>
 			<% include BlogSummary %>
 		<% end_loop %>
 	<% else %>

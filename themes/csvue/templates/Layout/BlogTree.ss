@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="module heroPostContainer" >
-		<% with HeroPost %>
+		<% with $HeroPost %>
 			<div class="large-12 heroPost clearfix" >
 				<div class="heropostImageHolder" >
 						$Image.CroppedImage(520,300) 
@@ -16,7 +16,7 @@
 	</div>
 </div>
 <div class="row  clearfix">
-	<% loop FeaturedPosts %>
+	<% loop $FeaturedPosts %>
 		<div class="large-3 columns FeaturedPost" >
 			<h3> $Title </h3>
 			$Image.CroppedImage(300,105) 
@@ -34,7 +34,8 @@
 	<div class="module" >
 		<div class="large-8  columns blogLatestPosts" >
 			<h2 class="BlogSummaryBlockHeading"> Recent Posts </h2>
-			<% loop BlogEntries %>
+			<% include BlogPagination %>
+			<% loop $BlogEntries %>
 				<div class="LatestPostModule">
 					$Image.CroppedImage(142,170)
 					<h3> $Title </h3>
@@ -44,7 +45,10 @@
 						<a href="$Link">READ MORE </a>
 				</div>
 			<% end_loop %>
+			<% include BlogPagination %>
+			<div class="spacer" ></div>
 		</div>
+
 		<div class="large-4 columns blog BlogSidebar" >
 			<h2 class="BlogSummaryBlockHeading"> $Parent.Title</h2>
 			<% loop HomePageSiderBarPost %>

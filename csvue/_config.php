@@ -26,8 +26,7 @@ MySQLDatabase::set_connection_charset('utf8');
 SSViewer::set_theme('csvue');
 SiteConfig::add_extension('SiteConfig','SiteConfigDecorator');
 BlogEntry::add_extension('BlogEntry', 'BlogEntryExtension');
-
-//BlogHolder::add_extension('BlogHolder','BlogHolderExtension');
+BlogHolder::add_extension('BlogHolder','BlogHolderExtension');
 
 // Set the site locale
 i18n::set_locale('en_GB');

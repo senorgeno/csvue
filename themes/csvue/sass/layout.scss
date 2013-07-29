@@ -436,6 +436,15 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 	h3 {margin-bottom: 18px; text-transform: none;}
 	.CommentCount {color: #bbd646;font-size: 14px;margin: 0; float:right;}
 }
+.pagination {
+	margin:8px 0 0 0;
+	height: 1.3em;
+  ul {float:left;
+  	li a{}
+  }
+  .disabled {color:$lightGray;}
+}
+.spacer {height:20px;}
 
 // blog Entry 
 .blogentry {

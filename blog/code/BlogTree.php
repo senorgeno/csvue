@@ -237,6 +237,7 @@ class BlogTree_Controller extends Page_Controller {
 	}
 
 	function BlogEntries($limit = null) {
+
 		require_once('Zend/Date.php');
 		
 		if($limit === null) $limit = BlogTree::$default_entries_limit;
@@ -267,8 +268,12 @@ class BlogTree_Controller extends Page_Controller {
 		}
 
 		$date = $this->SelectedDate();
-		
-		return $this->Entries($limit, $this->SelectedTag(), ($date) ? $date : '', null, $filter);
+
+
+
+		$entries = $this->Entries($limit, $this->SelectedTag(), ($date) ? $date : '', null, $filter);
+
+		return $entries;
 	}
 
 	/**

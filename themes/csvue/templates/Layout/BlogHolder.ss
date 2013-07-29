@@ -2,7 +2,7 @@
 	<div class="module" >
 		<div class="large-12  columns blogLatestPosts" >
 			<h2 class="BlogSummaryBlockHeading"> $Title </h2>
-			<% loop BlogEntries %>
+			<% loop $BlogEntries(2) %>
 				<div class="LatestPostModule">
 					$Image.CroppedImage(142,170)
 					<h3> $Title </h3>
@@ -12,6 +12,7 @@
 						<a href="$Link">READ MORE </a>
 				</div>
 			<% end_loop %>
+			<% include BlogPagination %>
 		</div>
 	</div>
 </div>

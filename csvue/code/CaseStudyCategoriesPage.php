@@ -27,9 +27,6 @@ class CaseStudyCategoriesPage extends Page {
 
 		$fields->addFieldToTab("Root.Main", UploadField::create('Image','Case Study Image'), 'Content');
 
-
-
-
 		return $fields;
 	}
 
