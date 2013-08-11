@@ -64,8 +64,16 @@
 	</header>
 	<div class="row">
 		<div class="module">
-			<div class="large-12 colums tagline">
-				<h2> $SiteConfig.Tagline</h2>
+			<div class="large-12 colums tagline clearfix">
+				<div class="taglinoxes taglinoxes-first">
+					<h2>Online Environmental Compliance</h2>
+				</div>
+				<div class="taglinoxes">
+					<h2>Incident Management</h2>
+				</div>
+				<div class="taglinoxes">
+					<h2> Audit Systems </h2>
+				</div>
 			</div>
 		</div>
 	</div>

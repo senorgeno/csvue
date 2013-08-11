@@ -47,7 +47,7 @@ class Page extends SiteTree {
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab('Root.Images',new UploadField('PageImage'));
+		$fields->addFieldToTab('Root.Images',new UploadField('PageImage','This Image is displayed on the side of the page, if no image is uploaded then the page\'s text will be full width. The dimensions are 380 * 450 px'));
 		return $fields;
 	}
 

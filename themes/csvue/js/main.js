@@ -81,6 +81,23 @@ jQuery(document).ready(function($) {
 		});
 	});
 
+	// casestudy summary rollovers
+
+	$('.caseStudiesHolderHover').each(function(){
+		var $this = $(this);
+		$this.css({'position':'relative','display':'block'});
+		
+		var $hover = $this.find('.hoverContainerCSSummary');
+		$this.mouseenter(function(event){
+			$hover.fadeIn('fast');
+			console.log('hover over');
+		});
+		$this.mouseleave(function(){
+			$hover.fadeOut('slow');
+			console.log('hover out');
+		});
+	});
+
 	// Blog Holder Page
 	var FeaturedPostHeight = 0;
 	$('.FeaturedPost').each(function(){

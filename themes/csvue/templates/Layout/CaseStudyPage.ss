@@ -11,8 +11,8 @@
 	</div>	
 	<div class="module" >
 		<div class="large-4 columns mainContentSideBar" >
-			<% if $SideBarPhoto %>
-				$SideBarPhoto.CroppedImage(300,450)
+			<% if $PageImage %>
+				$PageImage.CroppedImage(300,450)
 			<% end_if %>
 		</div>
 	</div>

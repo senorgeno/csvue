@@ -109,10 +109,26 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .MenuHover {background-color: $lightBlue; position:absolute; top:0; left:0; right:0;bottom: 0;display: none;}
  
 .tagline { 
-	h2 {font-size:emCalc(20px);font-weight: bold;padding-top:7px; padding-bottom:3px;
-	color:$lightGreen; }
+	border-bottom: 1px solid #a7a9ab;
+	margin-bottom :6px;
+	.taglinoxes {
+		float:left;
+		display: inline-block;
+		border-right:  1px solid #a7a9ab;
+		margin: 10px 0 9px;
+		padding: 0;
+		&:last-of-type {border-right: none;}
+		h2 {
+			font-size:emCalc(21px);
+			font-weight: bold;
+			margin: 0 ;
+			color:$lightBlue; 
+			padding: 0 32px;
+			
+		}
+	}
+	.taglinoxes-first h2 {padding: 0 32px 0 16px;}
 }
-
 // Home Page Styles 
 .heroImage  {
 	width: 942px;
@@ -249,7 +265,7 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .HomepageLink {color: $darkGray;font-size: 12px;font-weight: normal; text-transform: uppercase; text-decoration: underline;}
 .SellingPageContainer {width: 300px;margin:0 10px 34px 10px;
 	img {width: 300; height: 157;}
-	h5 {color: $darkGray;font-size: 16px;font-weight: bold; color:$lightBlue;}
+	h5 {color: $darkGray;font-size: 16px;font-weight: bold; color:$lightBlue;margin-top:12px;}
 	p {color: $darkGray;font-size: 12px;font-weight: normal;}
     @media (max-width: 950px) {
      width: 100%;
@@ -272,7 +288,10 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 
 // caseStudyCategory Page
 //380 × 224
-.ContentTop {border-top: 1px solid #a7a9ab;}
+//.ContentTop {border-top: 1px solid #a7a9ab;}
+
+.hoverContainerCSSummary {background:url('../images/caseStudiesHover.png') no-repeat center center rgba(68,69,68,0.8); position:absolute; top:0; left:0; right:0;bottom: 0;z-index: 3; display: none;}
+.caseStudiesHolderHover {}
 .caseStudiesHolderTop {height:144px;
   h1 {padding-top:30px;}
   @media (max-width:$small)  {
