@@ -12,9 +12,14 @@
 		<% else %>
 			<div class="large-12 columns mainContent">
 				<h1> $Title </h1>
+			</div>
+			<% include Slider %>
+			<div class="large-12 columns">
 				$Content
 				$Form
 			</div>
+				
+			
 		<% end_if %>
 	</div>
 </div>

@@ -1,22 +1,6 @@
 <div class="row" >
 	<div class="module">
-		<div class="large-12 flexslider-container">
-			<div class="flexslider" >
-				<ul class="slides">
-				<% loop $HeroImages %>
-				<li>
-					<% if $Link %>
-						<a href="$Link">
-					<% end_if %>
-					$Image.CroppedImage(942,374)
-					<% if $Link %>
-						</a>
-					<% end_if %>
-				</li>
-				<% end_loop %>
-				</ul>
-			</div>
-		</div>
+		<% include Slider %>
 		<div class="large-12 lightBlue caseStudiesTitle" >
 			<h3 class="myrid" > Case Studies</h3>
 		</div>
