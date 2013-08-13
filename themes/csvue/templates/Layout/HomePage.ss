@@ -41,9 +41,11 @@
 </div>
 <div class="row" >
 	<div class="module">
+		<a href="about/">
 		<div class="lightGreen caseStudiesTitle aboutTitle" >
 			<h3 class="myrid" > About </h3>
 		</div>
+		</a>
 	</div>
 </div>
 <% include AboutBanners %>
