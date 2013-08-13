@@ -2,6 +2,13 @@
 
 class NominationFormPage extends Page {
 
+	static $db = array('FormTitle'=> 'Varchar');
+
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
+		$fields->addFieldToTab('Root.Main',new TextField('FormTitle','Title above the Form'),'Content');
+		return $fields;
+	}
 
 }
 
@@ -22,33 +29,34 @@ class NominationFormPage_Controller extends Page_Controller {
 		$fields =  new FieldList(array(
 			TextField::create('Name','Your Name' )->setAttribute('required', true)->addExtraClass('fieldadjust'),
 			TextField::create('Organisation')->setAttribute('required', true)->addExtraClass('fieldadjust'),
-			TextareaField::create('ContactDetails','ContactDetails')->setAttribute('required', true)->addExtraClass('fieldadjust'),
-			TextField::create('Organisation')->setAttribute('required', true)->addExtraClass('fieldadjust'),
-			TextField::create('PersonNominating','Person you are nominating')->setAttribute('required', true)->addExtraClass('fieldadjust'),
-			TextareaField::create('NominatingContact','nominated persons contact details')->setAttribute('required', true)->addExtraClass('fieldadjust'),
+			TextareaField::create('ContactDetails','Contact Details')->setAttribute('required', true)->addExtraClass('fieldadjust'),
+			TextField::create('PersonNominating','Person you are Nominating')->setAttribute('required', true)->addExtraClass('fieldadjust'),
+			TextareaField::create('NominatingContact','Nominated Persons Contact Details')->setAttribute('required', true)->addExtraClass('fieldadjust'),
 			DropdownField::create('category', 'Award Category', $this->dropDown)->setAttribute('required', true)->addExtraClass('fieldadjust'),
-			TextareaField::create('Summary', 'Brief summary of why they deserve an award')->setAttribute('required', true)->addExtraClass('fieldadjust')
+			TextareaField::create('Summary', 'Brief Summary of why they Deserve an Award')->setAttribute('required', true)->addExtraClass('fieldadjust')
 		));
 
 
 		$actions = new FieldList(array(
 			FormAction::create('doNominationForm', 'Submit')->addExtraClass('button rounded')
 		));
-		$validator = new RequiredFields('Name','Organisation','ContactDetails','Organisation','PersonNominating','NominatingContact','category');
+		$validator = new RequiredFields('Name','Organisation','ContactDetails','PersonNominating','NominatingContact','category');
 
-		return new Form($this,'ContactForm',$fields, $actions, $validator);
+		return new Form($this,'NominationForm',$fields, $actions, $validator);
 	}
 
 	public function doNominationForm($data, $form) {
 		$to = SiteConfig::get()->first()->email;
 		$body = '<h1> ' . $data['Name'] . '</h1>
-				 <p> ' . $data['Email'] . '</p>
-				 <p> ' . $data['Message'] . '</p>
-				 <p> ' . $data['Message'] . '</p>
-				 <p> ' . $data['Message'] . '</p>';
-
-
-		$email = new Email($data['Email'],$to, 'enquiry form the CSVUE Website', $body );
+				 <p> ' . $data['Organisation'] . '</p>
+				 <p> ' . $data['ContactDetails'] . '</p>
+				 <p> ' . $data['PersonNominating'] . '</p>
+				 <p> ' . $data['NominatingContact'] . '</p>
+				<p> ' . $this->dropDown[$data['category']] . '</p>
+				<p> ' . $data['Summary'] . '</p>';
+		//Debug::show($to);
+		//Debug::show($body);
+		$email = new Email($to,$to, 'CSVUE Award Nomination', $body );
 		$email->send();
 		$form->sessionMessage('Thanks, we\'ll be in touch', 'good');
 		return $this->redirectBack();
