@@ -29,6 +29,7 @@ h3 { text-decoration:uppercase;font-size:16px; font-weight:bold;color:$darkGray;
 h4 { font-size:14px;color:$darkGray;font-weight:normal;margin-bottom:1px; }
 h5 {font-size: 14px; line-height: 1.3em;}
 img{max-width:100% ;  height:auto;}
+ul {margin-bottom: 26px;}
 body{}
 .row {padding-top:0; padding-bottom:0;margin-top: 0;margin-bottom:0;}
 .module { margin: 0 10px;}
@@ -40,11 +41,10 @@ border-radius: 4px;}
 
 .top-bar2{ height: 50px; background-color: #D1D3D4; 
 	.topbarrow {height: 50px; }
-  ul { float:right; margin-bottom: 0;
+}
+.socialLinks { float:right; margin-bottom: 0;
     li { display: inline-block; list-style: none;}
   }
-
-}
 // header styles
 header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .header-container {}
