@@ -30,6 +30,8 @@ ErrorDocument 500 /assets/error-500.html
 	SetEnv HTTP_MOD_REWRITE On
 	RewriteEngine On
 
+	RewriteRule ^case-studies/(.*)$|case-studies$ /case-studies-coming-soon/ [NC,L,R=301]
+
 	RewriteCond %{REQUEST_URI} ^(.*)$
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_URI} !\.php$

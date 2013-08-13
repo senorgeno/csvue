@@ -16,6 +16,17 @@
 	<link rel="stylesheet" type="text/css" href="themes/csvue/flexslider/flexslider.css" />
 	<% require themedCSS('app') %>
 
+	<% if $GoogleAnalyticsID %>
+			var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', '$GoogleAnalyticsID']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	<% end_if %>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -83,7 +94,7 @@
         <div class="row">
         	<div class="module" >
         		<div class="large-4 columns">
-        			<h5>TALK TO US ABOUT COMPLIANCE,INCIDENT MANAGEMENT OR AUDIT SYSTEMS</h5>
+        			<h5>TALK TO US ABOUT COMPLIANCE, INCIDENT MANAGEMENT OR AUDIT SYSTEMS</h5>
         			<div class="address">
         				$SiteConfig.Address
         			</div>
@@ -96,10 +107,13 @@
         		</div>
         		<div class="large-4 columns footerBlogLatest">
         			<h5> Recent Articles</h5>
+				<p>Coming soon</p>
+				<!--
         			<% loop LatestBlogPosts %>
         				<a href="$Link"><h6 class="">$Title</h6></a>
         				<p class="date"> $Date.Long </p>
         			<% end_loop %>
+				-->
         		</div>
         		<div class="large-4 columns">
         			<a href="home"><h5 class="footerMenu">Home</h5></a>
