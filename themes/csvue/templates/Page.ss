@@ -15,6 +15,7 @@
 	$MetaTags(false)
 	<link rel="stylesheet" type="text/css" href="themes/csvue/flexslider/flexslider.css" />
 	<% require themedCSS('app') %>
+	<% require themedCSS('editor') %>
 
 	<% if $GoogleAnalyticsID %>
 			var _gaq = _gaq || [];

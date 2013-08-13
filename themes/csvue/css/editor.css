@@ -1,0 +1,24 @@
+.left { 
+   float: left; 
+   margin:4px 10px 4px 0; 
+}
+
+.right { 
+   float: right; 
+   margin:4px 0 4px 10px; 
+}
+
+.center { 
+   display : block; 
+   margin: 0 auto 0 auto; 
+   text-align: center; 
+}
+
+.leftAlone { 
+   float: left; 
+   margin-right: 100%; 
+}
+
+.rightAlone { 
+   float: right; 
+}
