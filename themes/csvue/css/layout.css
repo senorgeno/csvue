@@ -1215,22 +1215,34 @@ fieldset textarea {
   float: left;
 }
 
-/* line 497, ../sass/layout.scss */
+/* line 498, ../sass/layout.scss */
+#futureInfo {
+  height: 50px;
+  position: relative;
+}
+/* line 501, ../sass/layout.scss */
+#futureInfo label {
+  position: absolute;
+  top: -14px;
+  left: -171px;
+}
+
+/* line 503, ../sass/layout.scss */
 #Form_ContactForm_action_doContactForm {
   margin-left: 94px;
 }
 
-/* line 499, ../sass/layout.scss */
+/* line 505, ../sass/layout.scss */
 .footer-container {
   background-color: #D1D3D3;
 }
-/* line 500, ../sass/layout.scss */
+/* line 506, ../sass/layout.scss */
 .footer-container .large-4 {
   width: 240px;
   margin-right: 70px;
   margin-top: 60px;
 }
-/* line 504, ../sass/layout.scss */
+/* line 510, ../sass/layout.scss */
 .footer-container .large-4 h5 {
   font: 12px;
   color: #535353;
@@ -1240,17 +1252,17 @@ fieldset textarea {
   padding: 18px 0 14px 0;
   margin-bottom: 22px;
 }
-/* line 505, ../sass/layout.scss */
+/* line 511, ../sass/layout.scss */
 .footer-container .large-4 p {
   margin: 0;
   padding: 0;
 }
-/* line 506, ../sass/layout.scss */
+/* line 512, ../sass/layout.scss */
 .footer-container .large-4 .email a {
   text-decoration: underline;
   color: #535353;
 }
-/* line 507, ../sass/layout.scss */
+/* line 513, ../sass/layout.scss */
 .footer-container .large-4 .footerMenu {
   font: 12px;
   color: #535353;
@@ -1261,34 +1273,34 @@ fieldset textarea {
   border-bottom: none;
 }
 @media (max-width: 668px) {
-  /* line 500, ../sass/layout.scss */
+  /* line 506, ../sass/layout.scss */
   .footer-container .large-4 {
     width: 100%;
     margin-right: 0;
   }
 }
 
-/* line 517, ../sass/layout.scss */
+/* line 523, ../sass/layout.scss */
 .footerBlogLatest h6 {
   font-size: 14px;
   font-weight: bold;
   color: #444545;
   margin: 20px 0 0 0;
 }
-/* line 518, ../sass/layout.scss */
+/* line 524, ../sass/layout.scss */
 .footerBlogLatest .date {
   font-size: 14px;
   margin: 0;
   line-height: 1em;
 }
 
-/* line 521, ../sass/layout.scss */
+/* line 527, ../sass/layout.scss */
 .footercopy {
   border-top: 1px solid #535353;
   margin-top: 42px;
   padding-top: 38px;
 }
-/* line 522, ../sass/layout.scss */
+/* line 528, ../sass/layout.scss */
 .footercopy .copyright {
   font-size: 10px;
   float: left;

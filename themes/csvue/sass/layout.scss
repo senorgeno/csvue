@@ -494,6 +494,12 @@ label {font-size:14px; font-weight:bold; font-family: $lucaGrande;margin-bottom:
 fieldset input,fieldset textarea {border:1px solid #cecece !important;border-radius:3px;padding:20px 16px 22px 16px  !important;color: #d1d3d4 !important; }
 fieldset textarea {min-height:112px !important;}
 .fieldadjust {width:100%;float:left;}
+.checkbox {};
+#futureInfo {
+  height: 50px;
+  position: relative;
+  label {position: absolute;top: -14px;left: -171px;}
+}
 #Form_ContactForm_action_doContactForm {margin-left: 94px;}
 // footer sytles
 .footer-container{ background-color: #D1D3D3; 
