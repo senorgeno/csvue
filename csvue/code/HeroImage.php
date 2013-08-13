@@ -8,7 +8,7 @@ class HeroImage extends Image {
 
 	public static $has_one = array(
 		'Image' => 'Image',
-		'HomePage' => 'HomePage'
+		'Page' => 'Page'
 	);
 
 	public function getCMSFields() {

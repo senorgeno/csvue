@@ -7,7 +7,11 @@ class Page extends SiteTree {
 	static $has_one = array(
 		'PageImage' => 'Image'
 	);
-
+	
+	static $has_many = array (
+		'HeroImages' => 'HeroImage',
+	);
+	
 	public function Socials() {
 		return Social::get();
 	}
@@ -47,6 +51,13 @@ class Page extends SiteTree {
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
+		
+		
+		$gf = new GridField('HeroImages','HeroImages',$this->HeroImages(), GridFieldConfig_RecordEditor::create());
+		$fields->addFieldsToTab('Root.HeroImages', $gf);
+
+		return $fields;
+		
 		$fields->addFieldToTab('Root.Images',new UploadField('PageImage','This Image is displayed on the side of the page, if no image is uploaded then the page\'s text will be full width. The dimensions are 380 * 450 px'));
 		return $fields;
 	}

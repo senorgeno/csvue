@@ -6,17 +6,17 @@ class HomePage extends Page {
 		'CaseStudiesIntro' => 'Text'
 	);
 
-	static $has_many = array (
-		'HeroImages' => 'HeroImage',
-	);
+//	static $has_many = array (
+//		'HeroImages' => 'HeroImage',
+//	);
 
 
 	public function getGeneratedCMSFields() {
 
 		$fields = parent::getCMSFields();
 		$fields->addFieldToTab('Root.Main',TextField::create('CaseStudiesIntro', 'Case Studies Intro'),'Content');
-		$gf = new GridField('HeroImages','HeroImages',$this->HeroImages(), GridFieldConfig_RelationEditor::create());
-		$fields->addFieldsToTab('Root.HeroImages', $gf);
+		//$gf = new GridField('HeroImages','HeroImages',$this->HeroImages(), GridFieldConfig_RecordEditor::create());
+		//$fields->addFieldsToTab('Root.HeroImages', $gf);
 
 		return $fields;
 	}
