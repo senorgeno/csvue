@@ -83,7 +83,7 @@
         <div class="row">
         	<div class="module" >
         		<div class="large-4 columns">
-        			<h5>TALK TO US ABOUT COMPLIANCE,INCIDENT MANAGEMENT OR AUDIT SYSTEMS</h5>
+        			<h5>TALK TO US ABOUT COMPLIANCE, INCIDENT MANAGEMENT OR AUDIT SYSTEMS</h5>
         			<div class="address">
         				$SiteConfig.Address
         			</div>
