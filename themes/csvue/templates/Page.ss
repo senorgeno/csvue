@@ -97,12 +97,12 @@
         		<div class="large-4 columns footerBlogLatest">
         			<h5> Recent Articles</h5>
 				<p>Coming soon</p>
-				<%--
+				<!--
         			<% loop LatestBlogPosts %>
         				<a href="$Link"><h6 class="">$Title</h6></a>
         				<p class="date"> $Date.Long </p>
         			<% end_loop %>
-				--%>
+				-->
         		</div>
         		<div class="large-4 columns">
         			<a href="home"><h5 class="footerMenu">Home</h5></a>
