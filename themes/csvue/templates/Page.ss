@@ -76,6 +76,7 @@
 	<div class="row">
 		<div class="module">
 			<div class="large-12 colums tagline clearfix">
+				<a href="about/products/" >
 				<div class="taglinoxes taglinoxes-first">
 					<h2>Online Environmental Compliance</h2>
 				</div>
@@ -85,6 +86,7 @@
 				<div class="taglinoxes">
 					<h2> Audit Systems </h2>
 				</div>
+				</a>
 			</div>
 		</div>
 	</div>

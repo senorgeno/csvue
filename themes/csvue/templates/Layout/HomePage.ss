@@ -1,17 +1,21 @@
 <div class="row" >
 	<div class="module">
 		<% include Slider %>
+		<a href="case-studies/">
 		<div class="large-12 lightBlue caseStudiesTitle" >
 			<h3 class="myrid" > Case Studies</h3>
 		</div>
+		</a>
 	</div>
 </div>
 
 <div class="row">
 	<div class="large-3 small-6 columns csContainer " >
+
 		<div class="casestudiesHomePageintro lightBlue cs" >
 			<p class="myrid">$CaseStudiesIntro</p>
 		</div>
+
 	</div>
 	<% loop $CaseStudyCategories %>
 	<a href="$Link">
