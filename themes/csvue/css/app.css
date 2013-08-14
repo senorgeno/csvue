@@ -8104,9 +8104,6 @@ header .module {
 }
 /* line 358, ../sass/layout.scss */
 .mainContent h1 {
-  border-bottom: 1px solid #d1d3d4;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
   font-size: 32px;
   color: #535353;
   font-family: "lucida_sans_regular", times, sans-serif;
