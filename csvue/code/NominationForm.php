@@ -18,7 +18,9 @@ class NominationFormPage_Controller extends Page_Controller {
 		1 => 'Local Government Environmental Manager of the Year 2014',
 		2 => 'Sustainable Agriculture Environmental Manager of the Year 2014',
 		3 => 'Young Environmental Manager of the Year 2014',
-		4 => 'Corporate Leadership in Environmental Technology & Information Systems Award 2014'
+		4 => 'Consulting Environmental Manager of the Year 2014',
+		5 => 'Corporate Leadership in Environmental Technology & Information Systems Award 2014',
+		6 => 'Supreme Award: CS-VUE New Zealand Environmental Manager of the Year 2014'
 	);
 
 	static $allowed_actions = array(
