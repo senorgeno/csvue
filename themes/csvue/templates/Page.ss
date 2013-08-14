@@ -17,9 +17,9 @@
 	<% require themedCSS('app') %>
 	<% require themedCSS('editor') %>
 
-	<% if $GoogleAnalyticsID %>
+	<% if $SiteConfig.GoogleAnalyticsID %>
 			var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', '$GoogleAnalyticsID']);
+		_gaq.push(['_setAccount', '$SiteConfig.GoogleAnalyticsID']);
 		_gaq.push(['_trackPageview']);
 
 		(function() {
