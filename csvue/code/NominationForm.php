@@ -48,7 +48,7 @@ class NominationFormPage_Controller extends Page_Controller {
 	}
 
 	public function doNominationForm($data, $form) {
-		$to = SiteConfig::get()->first()->email;
+		$to = 'KathrynP@csvue.com';	//SiteConfig::get()->first()->email;
 		$body = '<h1> ' . $data['Name'] . '</h1>
 				 <p> ' . $data['Organisation'] . '</p>
 				 <p> ' . $data['ContactDetails'] . '</p>

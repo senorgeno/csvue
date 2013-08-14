@@ -32,7 +32,7 @@ class ContactPage_Controller extends Page_Controller {
 	}
 
 	public function doContactForm($data, $form) {
-		$to = SiteConfig::get()->first()->email;
+		$to = 'support@csvue.com';//SiteConfig::get()->first()->email;
 		$country = Zend_Locale::getTranslation($data['Country'], 'Country');
 		$futureinfo = $data['futureInfo'] ? 'has signed up for Future Info ' : 'Has not signed up for future info';
 
