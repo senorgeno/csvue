@@ -1,11 +1,11 @@
 <div class="large-12 flexslider-container">
 	<% if $HeroImages.Count == 1 %>
 		<% loop $HeroImages %>
-			<% if $Link %>
+			<% if $URL %>
 				<a href="$URL">
 			<% end_if %>
 			$Image.CroppedImage(942,374)
-			<% if $Link %>
+			<% if $URL %>
 				</a>
 			<% end_if %>
 		<% end_loop %>
@@ -14,11 +14,11 @@
 		<ul class="slides">
 		<% loop $HeroImages %>
 		<li>
-			<% if $Link %>
+			<% if $URL %>
 				<a href="$URL">
 			<% end_if %>
 			$Image.CroppedImage(942,374)
-			<% if $Link %>
+			<% if $URL %>
 				</a>
 			<% end_if %>
 		</li>
