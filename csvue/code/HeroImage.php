@@ -1,9 +1,9 @@
 <?php
-class HeroImage extends Image {
+class HeroImage extends DataObject {
 
 	public static $db = array(
 		'Title' => 'Varchar',
-		'Link'  => 'Varchar'
+		'URL'  => 'Varchar'
 	);
 
 	public static $has_one = array(
@@ -15,7 +15,7 @@ class HeroImage extends Image {
 		$fields = new FieldList();
 		$fields->push( $heroimage = UploadField::create('Image'));
 		$fields->push( TextField::create('Title'));
-		$fields->push( TextField::create('Link'));
+		$fields->push( TextField::create('URL'));
 		$heroimage->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 
 		return $fields;

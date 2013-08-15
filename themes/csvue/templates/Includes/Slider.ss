@@ -2,7 +2,7 @@
 	<% if $HeroImages.Count == 1 %>
 		<% loop $HeroImages %>
 			<% if $Link %>
-				<a href="$Link">
+				<a href="$URL">
 			<% end_if %>
 			$Image.CroppedImage(942,374)
 			<% if $Link %>
@@ -15,7 +15,7 @@
 		<% loop $HeroImages %>
 		<li>
 			<% if $Link %>
-				<a href="$Link">
+				<a href="$URL">
 			<% end_if %>
 			$Image.CroppedImage(942,374)
 			<% if $Link %>
