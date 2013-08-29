@@ -3,7 +3,7 @@
 		<% include Slider %>
 		<a href="case-studies/">
 		<div class="large-12 lightBlue caseStudiesTitle" >
-			<h3 class="myrid" > Case Studies</h3>
+			<h3 class="" > Case Studies</h3>
 		</div>
 		</a>
 	</div>
@@ -13,7 +13,7 @@
 	<div class="large-3 small-6 columns csContainer " >
 
 		<div class="casestudiesHomePageintro lightBlue cs" >
-			<p class="myrid">$CaseStudiesIntro</p>
+			<p class="">$CaseStudiesIntro</p>
 		</div>
 
 	</div>
@@ -43,7 +43,7 @@
 	<div class="module">
 		<a href="about/">
 		<div class="lightGreen caseStudiesTitle aboutTitle" >
-			<h3 class="myrid" > About </h3>
+			<h3 class="" > About </h3>
 		</div>
 		</a>
 	</div>

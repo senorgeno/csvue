@@ -18,8 +18,6 @@
 				$Content
 				$Form
 			</div>
-				
-			
 		<% end_if %>
 	</div>
 </div>

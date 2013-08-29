@@ -6,6 +6,7 @@
 @media screen and (max-width: 668px) {
     .tinynav { display: block; width: 100%;}
     #nav { display: none }
+
 }
 // End Responsive NAV
 
@@ -44,7 +45,16 @@ border-radius: 4px;}
 	.topbarrow {height: 50px; }
 }
 .socialLinks { float:right; margin-bottom: 0;
-    li { display: inline-block; list-style: none;}
+    //li { display: inline-block; list-style: none;}
+    .mobile {display: none;}
+    .desktop {display: inline;}
+    @media (max-width: $small) {
+      //width:348px;
+      .mobile {display: inline;}
+      .desktop {display:none;}
+       // li {margin: 0; padding: 0;}
+      //  img{ width: 70%; height: 70%; margin: 0; padding: 0;}
+    }
   }
 // header styles
 header .module{border-bottom: 1px solid $lightGray; position: relative;}
@@ -65,6 +75,7 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
   }
   @media (max-width: $small) {
     margin: 6px 16px 0 0;border:0;float: none;
+
   }
 }
 
@@ -129,6 +140,27 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 		}
 	}
 	.taglinoxes-first h2 {padding: 0 32px 0 16px;}
+
+    @media screen and (max-width: 750px) {
+      .taglinoxes {
+        border-right: none;
+        display:block;
+        width: 100%;
+        margin: 3px 0 3px;
+        h2 {
+
+          text-align: center;
+        }
+      }
+    }
+  @media screen and (max-width: 950px) {
+    .taglinoxes {
+      h2 {
+        font-size:emCalc(18px);
+        padding: 0 16px;
+      }
+    }
+  }
 }
 // Home Page Styles 
 .heroImage  {
@@ -248,7 +280,13 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .caseStudiesTitle { min-height: 82px; margin-top:28px; margin-bottom:16px;
   h3 { color: #ffffff; font-weight: lighter; padding: 24px 0 0 26px; font-size: 32px;}
 }
-.casestudiesHomePageintro p {color: #ffffff; font-size: 13px;min-height: 124px; padding: 10px 30px 0 10px; }
+.casestudiesHomePageintro p {
+color: #ffffff; font-size: 13px;min-height: 124px; padding: 10px 30px 0 10px;
+  @media screen and (max-width: 800px) {
+    font-size: 11px;
+  }
+
+}
 .csContainer { height: 124px; padding: 0 10px; margin-bottom: 15px;}
 .csContainer img {width: 229px; height: 105px;}
 .csContainer .cs h6 {color: $darkGray;font-size: 13px;font-weight: bold;}
@@ -362,8 +400,9 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 		}
 	h4 {font-family: "MyriadPro-Regular", times ,sans-serif;font-weight:bold;
 		font-size: 16px;}
-	p {padding-right:26px;}
+	p {padding-right:26px;line-height: 1.5em;}
 }
+.getintouchbox-dynamic {margin-bottom: 26px;}
 
 // about Page
 .staff {
@@ -499,11 +538,12 @@ fieldset textarea {min-height:112px !important;}
 #futureInfo {
   height: 50px;
   position: relative;
-  label {position: absolute;top: -14px;left: -171px;}
+  label {position: absolute;top: -2px;left: -171px;}
 }
 #Form_ContactForm_action_doContactForm {margin-left: 94px;}
 // footer sytles
-.footer-container{ background-color: #D1D3D3; 
+.footer-container{ background-color: #D1D3D3;
+    a ,a:active,a:hover,a:visited{color: $darkGray}
 	.large-4 {
 		width: 240px;
 		margin-right: 70px;

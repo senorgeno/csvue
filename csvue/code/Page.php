@@ -2,6 +2,9 @@
 class Page extends SiteTree {
 
 	public static $db = array(
+		'CallToActionText' => 'Varchar',
+		'CallToActionButtonText' => 'Varchar',
+		'CallToActionLink'  => 'Varchar'
 	);
 
 	static $has_one = array(
@@ -11,6 +14,20 @@ class Page extends SiteTree {
 	static $has_many = array (
 		'HeroImages' => 'HeroImage',
 	);
+
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
+
+		$gf = new GridField('HeroImages','HeroImages',$this->HeroImages(), GridFieldConfig_RecordEditor::create());
+		$fields->addFieldToTab('Root.HeroImages', $gf);
+		$fields->addFieldToTab('Root.CallToAction', new TextField('CallToActionText', 'Call to Action Text'));
+		$fields->addFieldToTab('Root.CallToAction', new TextField('CallToActionButtonText','Button Text '));
+		$fields->addFieldToTab('Root.CallToAction', new TextField('CallToActionLink', 'Link that the button goes to'));
+		return $fields;
+
+		$fields->addFieldToTab('Root.Images',new UploadField('PageImage','This Image is displayed on the side of the page, if no image is uploaded then the page\'s text will be full width. The dimensions are 380 * 450 px'));
+		return $fields;
+	}
 	
 	public function Socials() {
 		return Social::get();
@@ -47,19 +64,6 @@ class Page extends SiteTree {
 
 	public function LatestBlogPosts()  {
 		return BlogEntry::get()->sort('ID','DESC')->limit(5);
-	}
-
-	public function getCMSFields() {
-		$fields = parent::getCMSFields();
-		
-		
-		$gf = new GridField('HeroImages','HeroImages',$this->HeroImages(), GridFieldConfig_RecordEditor::create());
-		$fields->addFieldsToTab('Root.HeroImages', $gf);
-
-		return $fields;
-		
-		$fields->addFieldToTab('Root.Images',new UploadField('PageImage','This Image is displayed on the side of the page, if no image is uploaded then the page\'s text will be full width. The dimensions are 380 * 450 px'));
-		return $fields;
 	}
 
 }
