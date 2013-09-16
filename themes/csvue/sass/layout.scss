@@ -58,7 +58,7 @@ border-radius: 4px;}
 header .module{border-bottom: 1px solid $lightGray; position: relative;}
 .header-container {}
 
-.logo{ width:428px; height: 68px; margin-top:16px;margin-bottom: 8px;float:left;margin-left: -5px;}
+.logo{ margin-top:16px;margin-bottom: 8px;float:left;margin-left: -5px;}
 
 .menuContainer {margin-top: 57px;}
 
@@ -286,7 +286,7 @@ color: #ffffff; font-size: 13px;min-height: 124px; padding: 10px 30px 0 10px;
 
 }
 .csContainer { height: 124px; padding: 0 10px; margin-bottom: 15px;}
-.csContainer img {width: 229px; height: 105px;}
+.csContainer img {}
 .csContainer .cs h6 {color: $darkGray;font-size: 13px;font-weight: bold;}
 
 .hoverContainer {background:url('../images/hoverPlusSmall.png') no-repeat center center rgba(68,69,68,0.8); position:absolute; top:0; left:0; right:0;bottom: 0;z-index: 3; display: none;}
