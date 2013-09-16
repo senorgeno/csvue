@@ -3,14 +3,14 @@
 class CaseStudyPage extends Page {
 
 
-	static $db = array (
+	private static $db = array (
 
 		'Summary' => 'HTMLText',
 		'VideoURL'   => 'Text',
 		'DisplayVideo' => 'Boolean'
 	);
 
-	static $has_one =array (
+	private static $has_one =array (
 		'ExcerptPhoto' => 'Image',
 		'SideBarPhoto' => 'Image',
 		'Logo' => 'Image',

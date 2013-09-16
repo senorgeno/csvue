@@ -6,7 +6,8 @@
 		"silverstripe/cms": "~3.1",
 		"silverstripe/framework": "~3.1",
 		"silverstripe/blog": "*",
-		"silverstripe/spamprotection": "*"
+		"silverstripe/spamprotection": "*",
+		"silverstripe/userforms": "*"
 	},
 	"minimum-stability": "dev"
 }

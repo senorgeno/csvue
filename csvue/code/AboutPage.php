@@ -4,7 +4,7 @@ class AboutPage extends Page {
 
 	/** //--// **/
 
-	static $has_many = array (
+	private static $has_many = array (
 		'StaffMembers' => 'StaffMember',
 	);
 
