@@ -2,7 +2,7 @@
 
 class NominationFormPage extends Page {
 
-	static $db = array('FormTitle'=> 'Varchar');
+	private static $db = array('FormTitle'=> 'Varchar');
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -23,7 +23,7 @@ class NominationFormPage_Controller extends Page_Controller {
 		6 => 'Supreme Award: CS-VUE New Zealand Environmental Manager of the Year 2014'
 	);
 
-	static $allowed_actions = array(
+	private static $allowed_actions = array(
 		'NominationForm'
 	);
 

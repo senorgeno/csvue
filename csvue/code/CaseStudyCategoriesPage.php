@@ -3,7 +3,7 @@
 class CaseStudyCategoriesPage extends Page {
 
 
-	static $has_one = array (
+	private static $has_one = array (
 		'Image' => 'Image',
 	);
 

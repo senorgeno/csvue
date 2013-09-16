@@ -5,13 +5,13 @@ class Social extends DataObject {
 	/** //--// **/
 
 
-	static $db = array (
+	private static $db = array (
 		'Link' => 'Varchar(255)',
 		'Name' => 'Varchar(255)',
 	);
 
 
-	static $has_one = array (
+	private static $has_one = array (
 		'Icon' => 'Image',
 		'SiteConfig' => 'SiteConfig',
 	);

@@ -1,17 +1,17 @@
 <?php
 class Page extends SiteTree {
 
-	public static $db = array(
+	private static $db = array(
 		'CallToActionText' => 'Varchar',
 		'CallToActionButtonText' => 'Varchar',
 		'CallToActionLink'  => 'Varchar'
 	);
 
-	static $has_one = array(
+	private static $has_one = array(
 		'PageImage' => 'Image'
 	);
 	
-	static $has_many = array (
+	private static $has_many = array (
 		'HeroImages' => 'HeroImage',
 	);
 
@@ -84,7 +84,7 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

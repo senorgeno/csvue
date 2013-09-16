@@ -2,7 +2,7 @@
 
 class HomePage extends Page {
 
-	static $db = array(
+	private static $db = array(
 		'CaseStudiesIntro' => 'Text'
 	);
 

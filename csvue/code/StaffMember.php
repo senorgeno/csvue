@@ -5,14 +5,14 @@ class StaffMember extends DataObject {
 	/** //--// **/
 
 
-	static $db = array (
+	private static $db = array (
 		'Name' => 'Varchar(255)',
 		'JobTitle' => 'Varchar(255)',
 		'Info' => 'Varchar(255)',
 	);
 
 
-	static $has_one = array (
+	private static $has_one = array (
 		'Photo' => 'Image',
 		'AboutPage' => 'AboutPage',
 	);

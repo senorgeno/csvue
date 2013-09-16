@@ -13,10 +13,11 @@
  */
 class MoneyTest extends SapphireTest {
 	
-	static $fixture_file = 'MoneyTest.yml';
+	protected static $fixture_file = 'MoneyTest.yml';
 
 	protected $extraDataObjects = array(
 		'MoneyTest_DataObject',
+		'MoneyTest_SubClass',
 	);
 	
 	public function testMoneyFieldsReturnedAsObjects() {
@@ -268,12 +269,36 @@ class MoneyTest extends SapphireTest {
 			))->value()
 		);
 	}
+
+	public function testMoneyLazyLoading() {
+		// Get the object, ensuring that MyOtherMoney will be lazy loaded
+		$id = $this->idFromFixture('MoneyTest_SubClass', 'test2');
+		$obj = MoneyTest_DataObject::get()->byID($id);
+
+		$this->assertEquals('£2.46', $obj->obj('MyOtherMoney')->Nice());
+	}
+
 }
 
+/**
+ * @package framework
+ * @subpackage tests
+ */
 class MoneyTest_DataObject extends DataObject implements TestOnly {
-	static $db = array(
+	private static $db = array(
 		'MyMoney' => 'Money', 
 		//'MyOtherMoney' => 'Money', 
+	);
+}
+
+/**
+ * @package framework
+ * @subpackage tests
+ */
+class MoneyTest_SubClass extends MoneyTest_DataObject implements TestOnly {
+
+	private static $db = array(
+		'MyOtherMoney' => 'Money', 
 	);
 
 }

@@ -1,12 +1,12 @@
 <?php
-/**
- * @package framework
- * @subpackage gridfield
- */
 
 /**
- * Adds an "Export list" button to the bottom of a GridField.
+ * Adds an "Export list" button to the bottom of a {@link GridField}.
+ *
+ * @package framework
+ * @subpackage fields-gridfield
  */
+
 class GridFieldExportButton implements GridField_HTMLProvider, GridField_ActionProvider, GridField_URLHandler {
 
 	/**
@@ -53,7 +53,7 @@ class GridFieldExportButton implements GridField_HTMLProvider, GridField_ActionP
 		$button->setAttribute('data-icon', 'download-csv');
 		$button->addExtraClass('no-ajax');
 		return array(
-			$this->targetFragment => '<p class="grid-csv-button">' . $button->Field() . '</p>',
+			$this->targetFragment => '<p class="grid-bottom-button grid-csv-button">' . $button->Field() . '</p>',
 		);
 	}
 
@@ -119,7 +119,7 @@ class GridFieldExportButton implements GridField_HTMLProvider, GridField_ActionP
 			$fileData .= "\n";
 		}
 
-		$items = $gridField->getList();
+		$items = $gridField->getManipulatedList();
 
 		// @todo should GridFieldComponents change behaviour based on whether others are available in the config?
 		foreach($gridField->getConfig()->getComponents() as $component){
@@ -128,8 +128,9 @@ class GridFieldExportButton implements GridField_HTMLProvider, GridField_ActionP
 			}
 		}
 
-		foreach($items as $item) {
+		foreach($items->limit(null) as $item) {
 			$columnData = array();
+
 			foreach($csvColumns as $columnSource => $columnHeader) {
 				if(!is_string($columnHeader) && is_callable($columnHeader)) {
 					if($item->hasMethod($columnSource)) {

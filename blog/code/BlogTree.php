@@ -11,32 +11,32 @@
 
 class BlogTree extends Page {
 
-	 static $icon = "blog/images/blogtree-file.png";
+	private static $icon = "blog/images/blogtree-file.png";
 
-	 static $description = "A grouping of blogs";
+	private static $description = "A grouping of blogs";
 	
-	 static $singular_name = 'Blog Tree Page';
+	private static $singular_name = 'Blog Tree Page';
 	
-	 static $plural_name = 'Blog Tree Pages';
+	private static $plural_name = 'Blog Tree Pages';
 	
 	// Default number of blog entries to show
 	static $default_entries_limit = 10;
 	
-	 static $db = array(
+	private static $db = array(
 		'Name' => 'Varchar(255)',
 		'InheritSideBar' => 'Boolean',
 		'LandingPageFreshness' => 'Varchar',
 	);
 	
-	 static $defaults = array(
+	private static $defaults = array(
 		'InheritSideBar' => True
 	);
 	
-	 static $has_one = array();
+	private static $has_one = array();
 
-	 static $has_many = array();
+	private static $has_many = array();
 	
-	 static $allowed_children = array(
+	private static $allowed_children = array(
 		'BlogTree', 'BlogHolder'
 	);
 
@@ -221,7 +221,7 @@ class BlogTree extends Page {
 
 class BlogTree_Controller extends Page_Controller {
 	
-	 static $allowed_actions = array(
+	private static $allowed_actions = array(
 		'index',
 		'rss',
 		'tag',
@@ -237,7 +237,6 @@ class BlogTree_Controller extends Page_Controller {
 	}
 
 	function BlogEntries($limit = null) {
-
 		require_once('Zend/Date.php');
 		
 		if($limit === null) $limit = BlogTree::$default_entries_limit;
@@ -268,12 +267,8 @@ class BlogTree_Controller extends Page_Controller {
 		}
 
 		$date = $this->SelectedDate();
-
-
-
-		$entries = $this->Entries($limit, $this->SelectedTag(), ($date) ? $date : '', null, $filter);
-
-		return $entries;
+		
+		return $this->Entries($limit, $this->SelectedTag(), ($date) ? $date : '', null, $filter);
 	}
 
 	/**

@@ -3,11 +3,11 @@
 class SellingPage extends Page {
 
 
-	static $db = array (
+	private static $db = array (
 		'Summary' => 'HTMLText',
 	);
 
-	static $has_one =array (
+	private static $has_one =array (
 		'Banner' => 'Image',
 	);
 

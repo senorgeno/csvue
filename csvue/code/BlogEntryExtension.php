@@ -1,13 +1,13 @@
 <?php
 class BlogEntryExtension extends DataExtension {
 
-	static $db  = array(
+	private static $db  = array(
 		'FeaturedPost' => 'Boolean',
 		'HeroPost'    => 'Boolean',
 		'HomePageSiderBarPost' => 'Boolean'
 	);
 
-	static $has_one = array(
+	private static $has_one = array(
 		'Image' => 'Image'
 	);
 

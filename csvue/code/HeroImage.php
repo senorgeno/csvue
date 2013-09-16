@@ -1,12 +1,12 @@
 <?php
 class HeroImage extends DataObject {
 
-	public static $db = array(
+	private static $db = array(
 		'Title' => 'Varchar',
 		'URL'  => 'Varchar'
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		'Image' => 'Image',
 		'Page' => 'Page'
 	);

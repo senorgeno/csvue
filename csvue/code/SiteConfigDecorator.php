@@ -3,7 +3,7 @@
 class SiteConfigDecorator extends DataExtension
 {
 
-	static $db = array (
+	private static $db = array (
 		'Address' => 'HTMLText',
 		'Phone' => 'HTMLText',
 		'email' => 'Varchar(255)',
@@ -12,7 +12,7 @@ class SiteConfigDecorator extends DataExtension
 	);
 
 
-	static $has_many = array (
+	private static $has_many = array (
 		'Socials' => 'Social'
 	);
 

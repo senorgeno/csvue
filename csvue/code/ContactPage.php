@@ -6,7 +6,7 @@ class ContactPage extends Page {
 }
 
 class ContactPage_Controller extends Page_Controller {
-	static $allowed_actions = array(
+	private static $allowed_actions = array(
 		'ContactForm'
 	);
 
@@ -23,6 +23,7 @@ class ContactPage_Controller extends Page_Controller {
 			CountryDropdownField::create('Country','Country',null,'NZ')->addExtraClass('fieldadjust'),
 			TextareaField::create('Message','Enter your Message *')->setAttribute('required', true)->addExtraClass('fieldadjust'),
 			CheckboxField::create('futureInfo','Tick to receive future info')->addExtraClass('fieldadjust')
+			
 		));
 		$actions = new FieldList(array(
 			FormAction::create('doContactForm', 'Contact CS-VUE')->addExtraClass('button rounded')

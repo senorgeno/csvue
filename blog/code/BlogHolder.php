@@ -13,24 +13,24 @@
  */
 class BlogHolder extends BlogTree implements PermissionProvider {
 
-	 static $icon = "blog/images/blogholder-file.png";
+	private static $icon = "blog/images/blogholder-file.png";
 	
-	 static $description = "Displays listings of blog entries";
+	private static $description = "Displays listings of blog entries";
 	
-	 static $singular_name = 'Blog Holder Page';
+	private static $singular_name = 'Blog Holder Page';
 
-	 static $plural_name = 'Blog Holder Pages';
+	private static $plural_name = 'Blog Holder Pages';
 
-	 static $db = array(
+	private static $db = array(
 		'AllowCustomAuthors' => 'Boolean',
 		'ShowFullEntry' => 'Boolean', 
 	);
 
-	 static $has_one = array(
+	private static $has_one = array(
 		'Owner' => 'Member',
 	);
 
-	 static $allowed_children = array(
+	private static $allowed_children = array(
 		'BlogEntry'
 	);
 
@@ -183,7 +183,7 @@ class BlogHolder extends BlogTree implements PermissionProvider {
 
 class BlogHolder_Controller extends BlogTree_Controller {
 
-	 static $allowed_actions = array(
+	private static $allowed_actions = array(
 		'index',
 		'tag',
 		'date',
