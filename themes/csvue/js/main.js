@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 		$this.mouseleave(function(){
 			$topNavA.css('color','#5c5653');
 			$this.find('.topMenuArrow').hide();
-			$this.find('ul').slideUp('100');
+			$this.find('ul').slideUp('300');
 		});
 	});
 	
