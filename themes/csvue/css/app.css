@@ -1443,7 +1443,7 @@ a.th { display: inline-block; }
   #nav { display: none; } }
 p { color: #535353; font-size: 14px; line-height: 1.3em; font-family: "MS Sans Serif", Geneva, sans-serif; }
 
-ul li { color: #535353; font-size: 14px; line-height: 1.3em; font-family: "MS Sans Serif", Geneva, sans-serif; }
+ul li, ol li { color: #535353; font-size: 14px; line-height: 1.3em; font-family: "MS Sans Serif", Geneva, sans-serif; }
 
 a { color: #c0d959; }
 
@@ -1459,7 +1459,7 @@ h5 { font-size: 14px; line-height: 1.3em; }
 
 img { max-width: 100%; height: auto; }
 
-ul { margin-bottom: 26px; margin-left: 20px; }
+ul, ol { margin-bottom: 26px; margin-left: 20px; }
 
 .row { padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0; }
 
