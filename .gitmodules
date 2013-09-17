@@ -1,0 +1,12 @@
+[submodule "reports"]
+	path = reports
+	url = git://github.com/silverstripe-labs/silverstripe-reports.git
+[submodule "spamprotection"]
+	path = spamprotection
+	url = git://github.com/silverstripe/silverstripe-spamprotection.git
+[submodule "userforms"]
+	path = userforms
+	url = git://github.com/silverstripe/silverstripe-userforms.git
+[submodule "widgets"]
+	path = widgets
+	url = git://github.com/silverstripe/silverstripe-widgets.git
