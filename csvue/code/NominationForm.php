@@ -44,7 +44,9 @@ class NominationFormPage_Controller extends Page_Controller {
 		));
 		$validator = new RequiredFields('Name','Organisation','ContactDetails','PersonNominating','NominatingContact','category');
 
-		return new Form($this,'NominationForm',$fields, $actions, $validator);
+		$form = new Form($this,'NominationForm',$fields, $actions, $validator);
+		$protector = SpamProtectorManager::update_form($form);
+		return $form;
 	}
 
 	public function doNominationForm($data, $form) {

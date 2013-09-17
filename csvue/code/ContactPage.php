@@ -22,14 +22,16 @@ class ContactPage_Controller extends Page_Controller {
 			TextField::create('postal2','Postal Address 2')->addExtraClass('fieldadjust'),
 			CountryDropdownField::create('Country','Country',null,'NZ')->addExtraClass('fieldadjust'),
 			TextareaField::create('Message','Enter your Message *')->setAttribute('required', true)->addExtraClass('fieldadjust'),
-			CheckboxField::create('futureInfo','Tick to receive future info')->addExtraClass('fieldadjust')
+			CheckboxField::create('futureInfo','Tick to receive future info')->addExtraClass('fieldadjust'),
 			
 		));
 		$actions = new FieldList(array(
 			FormAction::create('doContactForm', 'Contact CS-VUE')->addExtraClass('button rounded')
 		));
 		$validator = new RequiredFields('CompanyName','firstName','lastName','jobTitle','Email','Phone','Message');
-		return new Form($this,'ContactForm',$fields, $actions, $validator);
+		$form = new Form($this,'ContactForm',$fields, $actions, $validator);
+		$protector = SpamProtectorManager::update_form($form);
+		return $form;
 	}
 
 	public function doContactForm($data, $form) {
