@@ -35,4 +35,4 @@ i18n::set_locale('en_GB');
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 GD::set_default_quality(100);
-SpamProtectorManager::set_spam_protector('HoneyPotProtector');
+//SpamProtectorManager::set_spam_protector('HoneyPotProtector');
