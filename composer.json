@@ -8,7 +8,8 @@
 		"silverstripe/blog": "*",
 		"silverstripe/spamprotection": "*",
 		"silverstripe/userforms": "*",
-		"silverstripe/widgets": "*"
+		"silverstripe/widgets": "*",
+		"unclecheese/betterbuttons" : "*"
 	},
 	"minimum-stability": "dev"
 }
