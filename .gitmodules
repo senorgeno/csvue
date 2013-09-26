@@ -10,3 +10,6 @@
 [submodule "widgets"]
 	path = widgets
 	url = git://github.com/silverstripe/silverstripe-widgets.git
+[submodule "betterbuttons"]
+	path = betterbuttons
+	url = git://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git
