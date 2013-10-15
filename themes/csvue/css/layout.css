@@ -299,6 +299,10 @@ fieldset textarea { min-height: 112px !important; }
 
 .fieldadjust { width: 100%; float: left; }
 
+input.checkbox { float: left; width: 20px; }
+
+.checkbox label { width: 210px !important; float: none !important; }
+
 #futureInfo { height: 50px; position: relative; }
 #futureInfo label { position: absolute; top: -2px; left: -171px; }
 
