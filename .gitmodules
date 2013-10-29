@@ -13,3 +13,6 @@
 [submodule "betterbuttons"]
 	path = betterbuttons
 	url = git://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git
+[submodule "mollom"]
+	path = mollom
+	url = git://github.com/silverstripe/silverstripe-mollom.git
