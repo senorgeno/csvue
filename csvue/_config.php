@@ -16,8 +16,7 @@ require_once('conf/ConfigureFromEnv.php');
 //	"database" => "csvue",
 //	//"database" => "iconicDev"
 //);
-Security::setDefaultAdmin("admin", "admin");
-Director::set_environment_type("dev");
+//Security::setDefaultAdmin("admin", "admin");;
 
 MySQLDatabase::set_connection_charset('utf8');
 
@@ -35,4 +34,7 @@ i18n::set_locale('en_GB');
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 GD::set_default_quality(100);
-SpamProtectorManager::set_spam_protector('MathSpamProtector');
+
+MollomServer::setPublicKey('8552c5e28b0d2252f7ae0e0194258563');
+MollomServer::setPrivateKey('335e269575c42e9c942e5ae207d5f56b');
+SpamProtectorManager::set_spam_protector('MollomSpamProtector');

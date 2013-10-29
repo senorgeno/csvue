@@ -30,7 +30,11 @@ class ContactPage_Controller extends Page_Controller {
 		));
 		$validator = new RequiredFields('CompanyName','firstName','lastName','jobTitle','Email','Phone','Message');
 		$form = new Form($this,'ContactForm',$fields, $actions, $validator);
-		$protector = SpamProtectorManager::update_form($form);
+		// form fields and mollom fields mapping
+		$fieldMap = array('CompanyName' => 'author_name', 'firstName' => 'author_name', 'lastName' => 'author_lastname', 'jobTitle' => 'author_job', 'Email' => 'author_email', 'Phone' => 'author_phone', 'postal1' => 'author_postal1', 'postal2' => 'author_postal2', 'Country' => 'author_country', 'Message' => 'author_message');
+	
+		// Update the form to add the protector field to it
+		$protector = SpamProtectorManager::update_form($form, null, $fieldMap);
 		return $form;
 	}
 
@@ -48,6 +52,7 @@ class ContactPage_Controller extends Page_Controller {
 				 <p> ' . $data['Phone'] . '</p>
  				 <p> ' . $data['postal1'] . '</p>
  				 <p> ' . $data['postal2'] . '</p>
+				<p> '.$data['Message'].'</p>
  				 <p> ' . $country . 		'</p>
 				 <p> ' . $futureinfo . '</p>';
 

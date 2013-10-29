@@ -45,7 +45,11 @@ class NominationFormPage_Controller extends Page_Controller {
 		$validator = new RequiredFields('Name','Organisation','ContactDetails','PersonNominating','NominatingContact','category');
 
 		$form = new Form($this,'NominationForm',$fields, $actions, $validator);
-		$protector = SpamProtectorManager::update_form($form);
+		// form fields and mollom fields mapping
+		$fieldMap = array('Name' => 'author_name', 'Organisation' => 'author_organisation', 'ContactDetails' => 'author_contactdetails', 'PersonNominating' => 'author_personnominating', 'NominatingContact' => 'author_nominatingcontact', 'category' => 'author_category', 'Summary' => 'author_summary');
+	
+		// Update the form to add the protector field to it
+		$protector = SpamProtectorManager::update_form($form, null, $fieldMap);
 		return $form;
 	}
 

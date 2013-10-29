@@ -9,7 +9,8 @@
 		"silverstripe/spamprotection": "*",
 		"silverstripe/userforms": "*",
 		"silverstripe/widgets": "*",
-		"unclecheese/betterbuttons" : "*"
+		"unclecheese/betterbuttons" : "*",
+		"silverstripe/mollom": "dev-master"
 	},
 	"minimum-stability": "dev"
 }
