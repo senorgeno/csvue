@@ -65,7 +65,7 @@
 								</li>
 								<% end_loop %>
 							</ul>
-							<span class="topMenuArrow"></span>
+							<!--<span class="topMenuArrow"></span>-->
 							<% end_if %>
 						</li>
 						<% end_loop %>

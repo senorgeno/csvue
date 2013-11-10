@@ -1471,6 +1471,8 @@ ul, ol { margin-bottom: 26px; margin-left: 20px; }
 
 .button { padding: 12px 38px; }
 
+span.message { color: red; }
+
 .top-bar2 { height: 50px; background-color: #D1D3D4; }
 .top-bar2 .topbarrow { height: 50px; }
 
@@ -1496,13 +1498,13 @@ header .module { border-bottom: 1px solid #a7a9ab; position: relative; }
 .topMenu ul li { list-style: none; margin: 0; padding: 0; float: left; }
 .topMenu ul li a { margin: 0; padding: 8px 8px 10px 10px; display: inline-block; font-size: 12px; font-weight: bold; font-family: Lucida Sans, "Lucida Grande", "Lucida Sans Unicode", sans-serif; color: #535354; border-left: 1px solid #a7a9ab; position: relative; }
 .topMenu ul li a:hover { color: #FFFFFF; }
-.topMenu ul li ul { display: none; top: 38px; border-top: 7px solid white; position: absolute; background-color: #5c5653; z-index: 2; padding: 0 8px; }
+.topMenu ul li ul { display: none; top: 36px; position: absolute; background-color: #5c5653; z-index: 2; padding: 0 8px; }
 .topMenu ul li ul li:last-child { border: none; }
 .topMenu ul li ul li { padding: 0; margin: 0; border-bottom: 1px solid black; }
 .topMenu ul li ul li a { padding: 4px 0; width: 90px; color: #ededed; border-left: none; font-weight: normal; font-size: 10px; line-height: 1.3em; }
 .topMenu ul li ul li a:hover { color: #bbd645; }
 
-.topMenuArrow { position: absolute; background-image: url("../images/TopMenuArrow.png"); width: 18px; height: 9px; left: 39px; top: 38px; display: none; z-index: 3; }
+.topMenuArrow { position: absolute; background: url("../images/TopMenuArrow.png") no-repeat top center; width: 18px; height: 9px; left: 39px; top: 38px; display: none; z-index: 3; }
 
 .MenuHover { background-color: #0096d9; position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: none; }
 

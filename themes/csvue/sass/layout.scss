@@ -38,6 +38,7 @@ body{}
 -moz-border-radius: 4px;
 border-radius: 4px;}
 .button {padding: 12px 38px;}
+span.message{ color: red; }
 
 .top-bar2{ height: 50px; background-color: #D1D3D4; 
 	.topbarrow {height: 50px; }
@@ -90,8 +91,7 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 	
 		ul { 
 			display:none;
-			top: 38px;
-			border-top:7px solid #ffffff;
+			top: 36px;
 			position: absolute; background-color: #5c5653;
 			z-index: 2;
 			padding : 0 8px;
@@ -114,7 +114,7 @@ header .module{border-bottom: 1px solid $lightGray; position: relative;}
 		}
 	}
 }
-.topMenuArrow{position: absolute;background-image: url('../images/TopMenuArrow.png');
+.topMenuArrow{position: absolute; background: url('../images/TopMenuArrow.png') no-repeat top center;
 			width: 18px; height: 9px;left:39px;top: 38px;display:none;z-index: 3;}
 .MenuHover {background-color: $lightBlue; position:absolute; top:0; left:0; right:0;bottom: 0;display: none;}
  

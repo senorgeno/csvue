@@ -35,7 +35,6 @@ jQuery(document).ready(function($) {
 			$hover.fadeIn('fast');
 		});
 		$this.mouseleave(function(){
-			console.log('hover out');
 			$hover.fadeOut('fast');
 		});
 	});
@@ -51,7 +50,7 @@ jQuery(document).ready(function($) {
 		$this.mouseleave(function(){
 			$topNavA.css('color','#5c5653');
 			$this.find('.topMenuArrow').hide();
-			$this.find('ul').slideUp('slow');
+			$this.find('ul').hide();
 		});
 	});
 	
