@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,9 +14,10 @@
 
 	$MetaTags(false)
 	<link rel="stylesheet" type="text/css" href="themes/csvue/flexslider/flexslider.css" />
+
 	<% require themedCSS('app') %>
 	<% require themedCSS('editor') %>
-
+	<script src="$themeDir/js/modernizr.js" ></script>
 	<% if $SiteConfig.GoogleAnalyticsID %>
 	<script type="text/javascript">
 			var _gaq = _gaq || [];

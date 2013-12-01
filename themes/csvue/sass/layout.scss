@@ -1,6 +1,6 @@
 /* The Grid ---------------------- */
-.lt-ie9 .row { width: 940px; max-width: 100%; min-width: 768px; margin: 0 auto; }
-.lt-ie9 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.lt-ie9 .row { width: 946px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.lt-ie9 .row .row { width: 946px; max-width: none; min-width: 0; margin: 0 -15px; }
 .lt-ie9 .row.large-collapse .column,
 .lt-ie9 .row.large-collapse .columns { padding: 0; }
 .lt-ie9 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
@@ -79,6 +79,12 @@
 .lt-ie9 .push-9 { left: 75%; }
 .lt-ie9 .push-10 { left: 83.33333%; }
 
+.lt-ie9 .tagline .taglinoxes h2 { padding:0 23px;}
+.lt-ie9 .row .SellingPageContainer {width:150px; float: left;margin: 0 5px 10px 10px;padding: 0;}
+.lt-ie9 .row .SellingPageContainer a {display: block;margin: 0;padding: 0;width: 150px; }
+.lt-ie9 .row .SellingPageContainer .HomepageLink {display: none;width: 0;height: 0;margin: 0;padding: 0;font-size: 0;}
+.lt-ie9 .footer-container .large-4 { margin-right: 70px;width: 235px;}
+
 /* Nicolas Gallagher's micro clearfix */
 .lt-ie9 .row { *zoom: 1; }
 .lt-ie9 .row:before, .row:after { content: " "; display: table; }
@@ -129,13 +135,14 @@ span.message{ color: red; }
 .top-bar2{ height: 50px; background-color: #D1D3D4; 
 	.topbarrow {height: 50px; }
 }
-.socialLinks { float:right; margin-bottom: 0;
+.socialLinks { margin-bottom: 0;height: 50px; width: 332px; float: right;
     //li { display: inline-block; list-style: none;}
+    a {height:50px;display: block; float: left;}
     .mobile {display: none;}
-    .desktop {display: inline;}
+    .desktop {display: block;}
     @media (max-width: $small) {
-      //width:348px;
-      .mobile {display: inline;}
+      width:247px;
+      .mobile {display: block;}
       .desktop {display:none;}
        // li {margin: 0; padding: 0;}
       //  img{ width: 70%; height: 70%; margin: 0; padding: 0;}
